@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import { Home, About, Posts } from 'routes';
+import { Route } from 'react-router-dom';
+import { Home, Portfolio, Contact } from 'pages';
 import Menu from '../components/Menu';
+import Footer from '../components/Footer';
 
 class App extends Component {
     render() {
@@ -9,10 +10,9 @@ class App extends Component {
             <div>
                 <Menu/>
                 <Route exact path="/" component={ Home } />
-                <Switch>
-                    <Route path="/about/:name" component={ About } />
-                    <Route path="/about" component={ About } />
-                </Switch>
+                <Route exact path="/portfolio" component={ Portfolio } />
+                <Route exact path="/contact" component={ Contact } />
+                <Footer/>
             </div>
         );
     }
