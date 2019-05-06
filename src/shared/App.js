@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import { Home, Portfolio, Contact } from 'pages';
-import Menu from '../components/Menu';
-import Footer from '../components/Footer';
+import Menu from 'components/Menu';
+import Footer from 'components/Footer';
 
 class App extends Component {
     render() {
@@ -14,7 +14,7 @@ class App extends Component {
                 <Route exact path="/contact" component={ Contact } />
                 <Footer/>
             </div>
-        );
+        ); 
     }
 }
 
