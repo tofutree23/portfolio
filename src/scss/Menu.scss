@@ -1,0 +1,30 @@
+@import '../../node_modules/reset-css/sass/reset';
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    border-bottom: 5px dashed;
+    width:100vw;
+    ul {
+        padding: 10px 0;
+        width:100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        li {
+            font: {
+                family: 'Montserrat', sans-serif;
+                size: 20px;
+            }
+            text-decoration: none;
+            list-style: none;
+            border-left: 1px solid;
+            padding: 10px 80px;
+            &:first-child {
+                border-left: none;
+            }
+        }
+    }
+}
