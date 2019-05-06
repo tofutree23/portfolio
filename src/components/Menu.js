@@ -8,7 +8,9 @@ const Menu = () => {
             <ul>
                 <li><Link to="/">Home</Link></li>
                 {/* <li><a href="/">CLICK</a></li> <- 얘 쓰면 안됨. 새로고쳐짐.*/}
+                <li><Link to="/about">About</Link></li>
                 <li><Link to="/portfolio">Portfolio</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
         </div>
