@@ -1,7 +1,7 @@
 import React from 'react';
 // 리액트 라우터에서 Link기능을 이용하기 위해서 필요한 부분. a태그를 이용해서 주소를 바꿔주게 되면 새로고침이 일어나게 된다.
 import { Link } from 'react-router-dom';
-import "../scss/Menu.scss"
+import "scss/Menu.scss"
 
 const Menu = () => {
     return (
