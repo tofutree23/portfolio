@@ -1,11 +1,33 @@
 .hello {
-    width: 100%;
     overflow: hidden;
     display: flex;
-    padding: 35px;
-    
+    padding: 200px 0;
+    justify-content: center;
     font: {
         family: 'Montserrat', sans-serif;
-        size: 40px;
+        size: 50px;
     }
+}
+
+.desc {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 150px 0;
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 18px;
+    }
+}
+
+.details {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bnt {
+    overflow: hidden;
+    color: rgba(30,22,54,0.6);
+    box-shadow: rgba(30,22,54,0.4) 0 0px 0px 2px inset;
 }

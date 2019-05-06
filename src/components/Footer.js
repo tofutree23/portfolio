@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <footer className="footer">
-                <small>Copyright &copy; {new Date().getFullYear()} Jonghyung</small>
+                <small><span className="copyright">Copyright &copy; {new Date().getFullYear()}</span> Jonghyung</small>
             </footer>
         </div>
     );

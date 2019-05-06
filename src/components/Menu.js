@@ -5,7 +5,7 @@ import "scss/Menu.scss"
 
 const Menu = () => {
     return (
-        <div>
+        <div className="div">
             <nav>
                 <ul>
                     <li><Link to="/">Home</Link></li>
