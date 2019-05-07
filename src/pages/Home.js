@@ -7,7 +7,7 @@ class Home extends Component {
             <div className="home">
                 <h2 className="hello">Hello, I'm Jonghyung.</h2>
                 <p className="desc">I wanna be a front-end-web-developer.</p>
-                <div className="details"><button className="btn">See details</button></div>
+                <div className="details"><button className="detailBtn">Wanna know me?</button></div>
             </div>
         );
     }
