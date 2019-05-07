@@ -1,13 +1,9 @@
 import React from 'react';
-import queryString from 'query-string';
 
-const About = ({location, match}) => {
-    const query = queryString.parse(location.search);
-    const detail = query.detail === 'true';
+const About = () => {
     return (
         <div>
-            <h2>This is about {match.params.name}</h2>
-            {detail && 'detail: blah'}
+            <h2>This is about me</h2>
         </div>
     )
 }
