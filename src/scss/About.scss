@@ -1,3 +1,7 @@
+.aboutPage {
+    z-index: -1;
+}
+
 .about {
     overflow: hidden;
     display: flex;
@@ -22,6 +26,19 @@
 }
 
 .far {
+    font: {
+        size: 70px;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fab {
     font: {
         size: 70px;
     }

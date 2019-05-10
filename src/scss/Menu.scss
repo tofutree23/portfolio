@@ -1,7 +1,8 @@
 @import '../../node_modules/reset-css/sass/reset';
 
-.div {
+.menu {
     height: 10vh;
+    z-index: 1;
 }
 
 a {
@@ -12,6 +13,7 @@ nav {
     border-bottom: 5px dashed;
     width: 100vw;
     position: fixed;
+    background-color: white;
 
     ul {
         padding: 10px 0;
