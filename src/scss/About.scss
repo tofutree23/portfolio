@@ -1,0 +1,28 @@
+.about {
+    overflow: hidden;
+    display: flex;
+    padding: 150px 0;
+    justify-content: center;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 60px;
+    }
+}
+
+.pros {
+    display: flex;
+    justify-content: center;
+}
+
+.fas {
+    font: {
+        size: 70px;
+    }
+}
+
+.far {
+    font: {
+        size: 70px;
+    }
+}
