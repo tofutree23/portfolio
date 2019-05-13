@@ -1,7 +1,3 @@
-.aboutPage {
-    z-index: -1;
-}
-
 .about {
     overflow: hidden;
     display: flex;
@@ -15,14 +11,21 @@
 }
 
 .pros {
-    display: flex;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+}
+
+.pros-row {
+    display: inline-block;
     justify-content: center;
-    margin-bottom: 140px;
+    position: relative;
+    align-items: center;
 }
 
 .fas {
     font: {
-        size: 150px;
+        size: 100px;
     }
 
     padding: 30px 60px;
@@ -30,21 +33,8 @@
 
 .far {
     font: {
-        size: 150px;
+        size: 100px;
     }
 
     padding: 30px 60px;
-}
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.fab {
-    font: {
-        size: 70px;
-    }
 }

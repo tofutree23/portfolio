@@ -1,0 +1,78 @@
+.aboutPage {
+    z-index: -10;
+}
+
+.about {
+    overflow: hidden;
+    display: flex;
+    padding: 150px 0;
+    justify-content: center;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 60px;
+    }
+}
+
+.pros {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.pros-row {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.fas {
+    font: {
+        size: 100px;
+    }
+
+    padding: 30px 60px;
+}
+
+.far {
+    font: {
+        size: 100px;
+    }
+
+    padding: 30px 60px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fab {
+    font: {
+        size: 50px;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+    font: {
+        size: 30px;
+        family: 'Montserrat', sans-serif;
+        weight: bold;
+    }
+}
+
+.detail {
+    padding: 5px;
+    line-height: 20px;
+
+    font: {
+        size: 15px;
+    }
+}
