@@ -3,6 +3,7 @@
     display: flex;
     padding: 150px 0;
     justify-content: center;
+
     font: {
         family: 'Montserrat', sans-serif;
         size: 60px;
@@ -14,6 +15,7 @@
     display: flex;
     justify-content: center;
     padding: 0 0 10px 0;
+
     font: {
         family: 'Montserrat', sans-serif;
         size: 20px;
@@ -32,20 +34,23 @@
         family: 'Montserrat', sans-serif;
         size: 15px;
     }
+
     color: white;
     overflow: hidden;
     padding: 15px;
-    background-color: rgba(30,22,54,0.6);
-    box-shadow: rgba(30,22,54,0.4) 0 0px 0px 2px inset;
+    background-color: rgba(30, 22, 54, 0.6);
+    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
     border: none;
     border-radius: 10px;
+
     &:hover {
         background-color: rgba(253, 253, 253, 0.6);
         color: black;
     }
+
     &:active {
-        background-color: rgba(30,22,54,0.6);
-        box-shadow: 0 0px 0px 2px rgba(30,22,54,0.4);
+        background-color: rgba(30, 22, 54, 0.6);
+        box-shadow: 0 0px 0px 2px rgba(30, 22, 54, 0.4);
         transform: translateY(2px);
         color: white;
     }

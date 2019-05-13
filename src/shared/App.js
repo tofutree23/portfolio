@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 import { Home, Portfolio, Contact, Blog, About } from 'pages';
 import Menu from 'components/Menu';
 import Footer from 'components/Footer';
-import './App.css';
 
 class App extends Component {
   render() {

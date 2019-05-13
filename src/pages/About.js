@@ -9,25 +9,24 @@ class About extends Component {
           <h2 className="about">About me</h2>
         </div>
         <div className="pros">
-          <div className="pros-row">
-            <div className="pro-content">
-              <i className="fas fa-tachometer-alt" id="fast" />
-              <p className="title">Fast</p>
-            </div>
-            <div className="pro-content">
-              <i className="fas fa-sync-alt" id="responsibility" />
-              <p className="title">Responsive</p>
-            </div>
+          <div className="pro-content">
+            <i className="fas fa-tachometer-alt" id="fast" />
+            <p className="title">Fast</p>
+            <p className="desc">
+              asdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajkls
+            </p>
           </div>
-          <div className="pros-row">
-            <div className="pro-content">
-              <i className="far fa-comments" id="communicate" />
-              <p className="title">Communicative</p>
-            </div>
-            <div className="pro-content">
-              <i className="far fa-lightbulb" id="creative" />
-              <p className="title">Creative</p>
-            </div>
+          <div className="pro-content">
+            <i className="fas fa-sync-alt" id="responsibility" />
+            <p className="title">Responsive</p>
+          </div>
+          <div className="pro-content">
+            <i className="far fa-comments" id="communicate" />
+            <p className="title">Communicative</p>
+          </div>
+          <div className="pro-content">
+            <i className="far fa-lightbulb" id="creative" />
+            <p className="title">Creative</p>
           </div>
         </div>
         <div className="skills">
