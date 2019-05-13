@@ -1,8 +1,117 @@
 @import '../../node_modules/reset-css/sass/reset';
 
-.menu {
-    height: 10vh;
-    z-index: 1;
+@media (max-width: 1024px) {
+    .menu {
+        height: 10vh;
+        z-index: 1;
+    }
+
+    nav {
+        border-bottom: 5px dashed;
+        width: 100vw;
+        position: fixed;
+        background-color: white;
+
+        ul {
+            padding: 10px 0;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            li {
+                font: {
+                    family: 'Montserrat', sans-serif;
+                    size: 20px;
+                }
+
+                text-decoration: none;
+                list-style: none;
+                border-left: 1px solid;
+                padding: 10px 80px;
+
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        height: 6vh;
+        z-index: 1;
+    }
+
+    nav {
+        border-bottom: 5px dashed;
+        width: 100vw;
+        position: fixed;
+        background-color: white;
+
+        ul {
+            padding: 10px 0;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            li {
+                font: {
+                    family: 'Montserrat', sans-serif;
+                    size: 20px;
+                }
+
+                text-decoration: none;
+                list-style: none;
+                border-left: 1px solid;
+                padding: 10px 80px;
+
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 3px) {
+    .menu {
+        height: 10vh;
+        z-index: 1;
+    }
+
+    nav {
+        border-bottom: 5px dashed;
+        width: 100vw;
+        position: fixed;
+        background-color: white;
+
+        ul {
+            padding: 10px 0;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            li {
+                font: {
+                    family: 'Montserrat', sans-serif;
+                    size: 20px;
+                }
+
+                text-decoration: none;
+                list-style: none;
+                border-left: 1px solid;
+                padding: 10px 80px;
+
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+    }
 }
 
 a {

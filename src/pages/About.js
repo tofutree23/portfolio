@@ -8,18 +8,19 @@ class About extends Component {
         <h2 className="about">About me</h2>
 
         <div className="pros">
-          <i class="fas fa-tachometer-alt" id="fast" />
-          <i class="fas fa-sync-alt" id="responsibility" />
-          <i class="far fa-comments" id="communicate" />
-          <i class="far fa-lightbulb" id="creative" />
+          <i className="fas fa-tachometer-alt" id="fast" />
+          <i className="fas fa-sync-alt" id="responsibility" />
+          <i className="far fa-comments" id="communicate" />
+          <i className="far fa-lightbulb" id="creative" />
         </div>
         <div className="skills">
-          <i class="fab fa-html5" />
-          <i class="fab fa-css3" />
-          <i class="fab fa-js-square" />
-          <i class="fab fa-react" />
-          <i class="fab fa-aws" />
-          <i class="fab fa-node" />
+          <i className="fab fa-html5" />
+          <i className="fab fa-css3" />
+          <i className="fab fa-js-square" />
+          <i className="fab fa-react" />
+          <i className="fab fa-aws" />
+          <i className="fab fa-node" />
+          <i className="fab fa-adobe" />
         </div>
       </div>
     );
