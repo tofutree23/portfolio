@@ -23,14 +23,32 @@ class About extends Component {
           <div className="pro-content">
             <i className="fas fa-sync-alt" id="responsibility" />
             <p className="title">Responsive</p>
+            <p className="desc">
+              Duis ullamco est dolore cillum irure nulla ex. Duis pariatur
+              laborum labore culpa consequat ea. Lorem cillum eiusmod duis culpa
+              proident culpa eiusmod dolor amet proident sit enim et.
+            </p>
           </div>
           <div className="pro-content">
             <i className="far fa-comments" id="communicate" />
             <p className="title">Communicative</p>
+            <p className="desc">
+              Mollit ullamco cupidatat eu pariatur dolor. In deserunt qui labore
+              quis sint quis esse commodo officia. Reprehenderit magna ipsum
+              pariatur officia. Cupidatat ex nisi excepteur sint enim dolore
+              enim velit sint ut do qui.
+            </p>
           </div>
           <div className="pro-content">
             <i className="far fa-lightbulb" id="creative" />
             <p className="title">Creative</p>
+            <p className="desc">
+              Amet consequat dolor tempor ea. Amet adipisicing elit consequat et
+              qui. Exercitation do non amet fugiat excepteur consequat id mollit
+              id cupidatat est sint. Excepteur consequat et irure proident
+              consequat aute voluptate enim est magna. Fugiat sunt minim ullamco
+              ut velit ut sunt eiusmod proident anim magna excepteur.
+            </p>
           </div>
         </div>
         <div className="skills">
