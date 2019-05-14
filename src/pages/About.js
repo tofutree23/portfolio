@@ -13,7 +13,11 @@ class About extends Component {
             <i className="fas fa-tachometer-alt" id="fast" />
             <p className="title">Fast</p>
             <p className="desc">
-              asdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajklsasdjkl;fjkl;asdjkl;fjkl;asdjkl;fjkl;ajkls
+              Lorem Culpa ea commodo anim culpa et quis esse consequat nostrud.
+              In aliquip aliqua adipisicing reprehenderit sunt reprehenderit qui
+              non id anim magna ex. Tempor labore ea sit proident dolore aliquip
+              in nostrud reprehenderit labore aute ullamco. Do elit cillum
+              aliquip laboris nulla.
             </p>
           </div>
           <div className="pro-content">
