@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import 'scss/Home.scss';
 
 class Home extends Component {
@@ -11,11 +12,12 @@ class Home extends Component {
           If you want to know me more, please click the button below.
         </p>
         <div className="details">
-          <button className="detailBtn">Wanna know me?</button>
+          <Link to="/about">
+            <button className="detailBtn">Wanna know me?</button>
+          </Link>
         </div>
       </div>
     );
   }
 }
-
 export default Home;

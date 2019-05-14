@@ -5,7 +5,7 @@
 
     font: {
         family: 'Montserrat', sans-serif;
-        size: 60px;
+        size: 4rem;
     }
 }
 
@@ -14,6 +14,15 @@
     grid-gap: 2rem;
     margin: 0 60px;
     grid-template-columns: repeat(4, 1fr);
+
+    .title {
+        margin-bottom: 3rem;
+
+        font: {
+            size: 2rem;
+            family: 'Montserrat', sans-serif;
+        }
+    }
 }
 
 .pro-content {
