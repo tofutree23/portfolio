@@ -53,12 +53,43 @@ class About extends Component {
         </div>
         <div className="skills">
           <i className="fab fa-html5" />
+          <div className="bar">
+            <hr className="base-bar" />
+            <hr className="percent-bar html" />
+          </div>
           <i className="fab fa-css3" />
+          <div className="bar">
+            <hr className="base-bar" />
+            <hr className="percent-bar css" />
+          </div>
           <i className="fab fa-js-square" />
+          <div className="bar">
+            <hr className="base-bar" />
+            <hr className="percent-bar js" />
+          </div>
           <i className="fab fa-react" />
+          <div>
+            <hr className="base-bar" />
+            <hr className="percent-bar react" />
+          </div>
           <i className="fab fa-aws" />
+          <div>
+            <hr className="base-bar" />
+            <hr className="percent-bar aws" />
+          </div>
           <i className="fab fa-node" />
-          <i className="fab fa-adobe" />
+          <div>
+            <hr className="base-bar" />
+            <hr className="percent-bar node" />
+          </div>
+          <img
+            className="fab fa-ps"
+            src="https://img.icons8.com/metro/52/000000/adobe-photoshop.png"
+          />
+          <div>
+            <hr className="base-bar" />
+            <hr className="percent-bar" />
+          </div>
         </div>
       </div>
     );
