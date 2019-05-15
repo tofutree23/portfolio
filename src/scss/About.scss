@@ -1,7 +1,10 @@
+.bout {
+    text-align: center;
+}
+
 .about {
-    display: flex;
+    display: inline-block;
     padding: 150px 0;
-    justify-content: center;
 
     font: {
         family: 'Montserrat', sans-serif;
@@ -10,9 +13,8 @@
 }
 
 .stack {
-    display: flex;
+    display: inline-block;
     padding: 150px 0 50px;
-    justify-content: center;
 
     font: {
         family: 'Montserrat', sans-serif;

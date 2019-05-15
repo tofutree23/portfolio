@@ -5,7 +5,7 @@ class About extends Component {
   render() {
     return (
       <div className="aboutPage">
-        <div>
+        <div className="bout">
           <h2 className="about">About me</h2>
         </div>
         <div className="pros">
@@ -51,7 +51,7 @@ class About extends Component {
             </p>
           </div>
         </div>
-        <div>
+        <div className="bout">
           <h2 className="stack">Skill Stacks</h2>
         </div>
         <div className="skills">
