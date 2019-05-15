@@ -51,44 +51,70 @@ class About extends Component {
             </p>
           </div>
         </div>
+        <div>
+          <h2 className="stack">Skill Stacks</h2>
+        </div>
         <div className="skills">
-          <i className="fab fa-html5" />
+          <div className="logo">
+            <i className="fab fa-html5" />
+            <span className="bar-name">HTML</span>
+          </div>
           <div className="bar">
             <hr className="base-bar" />
             <hr className="percent-bar html" />
           </div>
-          <i className="fab fa-css3" />
+          <div className="logo">
+            <i className="fab fa-css3" />
+            <span className="bar-name">CSS</span>
+          </div>
           <div className="bar">
             <hr className="base-bar" />
             <hr className="percent-bar css" />
           </div>
-          <i className="fab fa-js-square" />
+          <div className="logo">
+            <i className="fab fa-js-square" />
+            <span className="bar-name">JavaScript</span>
+          </div>
           <div className="bar">
             <hr className="base-bar" />
             <hr className="percent-bar js" />
           </div>
-          <i className="fab fa-react" />
+          <div className="logo">
+            <i className="fab fa-react" />
+            <span className="bar-name">React</span>
+          </div>
           <div>
             <hr className="base-bar" />
             <hr className="percent-bar react" />
           </div>
-          <i className="fab fa-aws" />
+          <div className="logo">
+            <i className="fab fa-aws" />
+            <span className="bar-name">AWS</span>
+          </div>
           <div>
             <hr className="base-bar" />
             <hr className="percent-bar aws" />
           </div>
-          <i className="fab fa-node" />
+          <div className="logo">
+            <i className="fab fa-node" />
+            <span className="bar-name">Node.JS</span>
+          </div>
           <div>
             <hr className="base-bar" />
             <hr className="percent-bar node" />
           </div>
-          <img
-            className="fab fa-ps"
-            src="https://img.icons8.com/metro/52/000000/adobe-photoshop.png"
-          />
+          <div className="logo">
+            <img
+              style={{ width: '52px' }}
+              className="fab fa-ps"
+              src="https://img.icons8.com/metro/52/000000/adobe-photoshop.png"
+              alt="photoshop"
+            />
+            <span className="bar-name">photoshop</span>
+          </div>
           <div>
             <hr className="base-bar" />
-            <hr className="percent-bar" />
+            <hr className="percent-bar photoshop" />
           </div>
         </div>
       </div>

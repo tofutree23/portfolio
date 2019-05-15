@@ -9,6 +9,17 @@
     }
 }
 
+.stack {
+    display: flex;
+    padding: 150px 0 50px;
+    justify-content: center;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 4rem;
+    }
+}
+
 .pros {
     display: grid;
     grid-gap: 2rem;
@@ -39,8 +50,10 @@
 }
 
 .fas {
+
     font: {
         size: 6rem;
+
     }
 
     padding: 30px 60px;
@@ -55,12 +68,18 @@
 }
 
 .fab {
-    margin: auto;
-    justify-content: center;
+    z-index: -1;
+    opacity: 0.9;
 
     font: {
         size: 4.5rem;
     }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bar {
@@ -71,8 +90,7 @@
     margin: 5rem 15rem;
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
+    grid-template-columns: 1fr 3fr;
 
     font: {
         size: 4rem;
@@ -83,27 +101,50 @@
     justify-content: center;
     position: absolute;
     border: solid 15px lightgrey;
-    min-width: 20rem;
+    min-width: 40vw;
+    opacity: 0.7;
 }
 
 .percent-bar {
     float: left;
     position: relative;
     justify-content: center;
-    border: solid 15px black;
+    border: solid 15px #004655;
 
+}
+
+.bar-name {
+
+    font: {
+        size: 1.5rem;
+        family: 'Montserrat', sans-serif;
+    }
 }
 
 .html {
-    width: 4rem;
+    width: 33vw;
 }
 
-.css {}
+.css {
+    width: 30vw;
+}
 
-.js {}
+.js {
+    width: 28vw;
+}
 
-.node {}
+.react {
+    width: 18vw;
+}
 
-.aws {}
+.aws {
+    width: 19vw;
+}
 
-.adobe {}
+.node {
+    width: 15vw;
+}
+
+.photoshop {
+    width: 32vw;
+}
