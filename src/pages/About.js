@@ -1,27 +1,36 @@
 import React, { Component } from 'react';
 import 'scss/About.scss';
 
+const scrollEvent = () => {
+  if (window.scrollY > 700) {
+    document.getElementsByClassName('html')[0].style.width = '33vw';
+    document.getElementsByClassName('css')[0].style.width = '30vw';
+    document.getElementsByClassName('js')[0].style.width = '28vw';
+    document.getElementsByClassName('react')[0].style.width = '18vw';
+    document.getElementsByClassName('aws')[0].style.width = '19vw';
+    document.getElementsByClassName('node')[0].style.width = '15vw';
+    document.getElementsByClassName('photoshop')[0].style.width = '32vw';
+  } else {
+    document.getElementsByClassName('html')[0].style.width = '0';
+    document.getElementsByClassName('css')[0].style.width = '0';
+    document.getElementsByClassName('js')[0].style.width = '0';
+    document.getElementsByClassName('react')[0].style.width = '0';
+    document.getElementsByClassName('aws')[0].style.width = '0';
+    document.getElementsByClassName('node')[0].style.width = '0';
+    document.getElementsByClassName('photoshop')[0].style.width = '0';
+  }
+};
+
 class About extends Component {
+  componentDidMount = () => {
+    window.addEventListener('scroll', scrollEvent);
+  };
+
+  componentWillUnmount = () => {
+    window.removeEventListener('scroll', scrollEvent);
+  };
+
   render() {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 700) {
-        document.getElementsByClassName('html')[0].style.width = '33vw';
-        document.getElementsByClassName('css')[0].style.width = '30vw';
-        document.getElementsByClassName('js')[0].style.width = '28vw';
-        document.getElementsByClassName('react')[0].style.width = '18vw';
-        document.getElementsByClassName('aws')[0].style.width = '19vw';
-        document.getElementsByClassName('node')[0].style.width = '15vw';
-        document.getElementsByClassName('photoshop')[0].style.width = '32vw';
-      } else {
-        document.getElementsByClassName('html')[0].style.width = '0';
-        document.getElementsByClassName('css')[0].style.width = '0';
-        document.getElementsByClassName('js')[0].style.width = '0';
-        document.getElementsByClassName('react')[0].style.width = '0';
-        document.getElementsByClassName('aws')[0].style.width = '0';
-        document.getElementsByClassName('node')[0].style.width = '0';
-        document.getElementsByClassName('photoshop')[0].style.width = '0';
-      }
-    });
     return (
       <div className="aboutPage">
         <div className="bout">
