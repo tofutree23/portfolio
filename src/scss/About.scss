@@ -102,6 +102,8 @@
 
 .bar {
     z-index: -1;
+    display: flex;
+    align-items: center;
 }
 
 .skills {
@@ -116,7 +118,6 @@
 }
 
 .base-bar {
-    justify-content: center;
     position: absolute;
     border: solid 15px lightgrey;
     min-width: 40vw;
@@ -129,7 +130,6 @@
 }
 
 .bar-name {
-
     font: {
         size: 1.5rem;
         family: 'Montserrat', sans-serif;
@@ -137,59 +137,36 @@
 }
 
 .html {
-    width: 33vw;
+    width: 0;
     transition: 1.5s 0.2s width ease-in-out;
 }
 
 .css {
-    width: 30vw;
+    width: 0;
     transition: 1.5s 0.2s width ease-in-out;
 }
 
 .js {
-    width: 28vw;
+    width: 0;
     transition: 1.5s 0.2s width ease-in-out;
 }
 
 .react {
-    width: 18vw;
+    width: 0;
     transition: 1.5s 0.2s width ease-in-out;
 }
 
 .aws {
-    width: 19vw;
+    width: 0;
     transition: 1.5s 0.2s width ease-in-out;
 }
 
 .node {
-    width: 15vw;
+    width: 0;
     transition: 1.5s 0.2s width ease-in-out;
 }
 
 .photoshop {
-    width: 32vw;
+    width: 0;
     transition: 1.5s 0.2s width ease-in-out;
-}
-
-// 퍼센테이지 애니메이션 효과
-
-@keyframes percent {
-    0% {
-        width: 0px;
-    }
-
-    70% {
-        width: 100%;
-        opacity: 1;
-    }
-
-    90% {
-        opacity: 0;
-        width: 100%;
-    }
-
-    100% {
-        opacity: 0;
-        width: 0px;
-    }
 }

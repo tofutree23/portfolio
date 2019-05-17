@@ -3,6 +3,25 @@ import 'scss/About.scss';
 
 class About extends Component {
   render() {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 700) {
+        document.getElementsByClassName('html')[0].style.width = '33vw';
+        document.getElementsByClassName('css')[0].style.width = '30vw';
+        document.getElementsByClassName('js')[0].style.width = '28vw';
+        document.getElementsByClassName('react')[0].style.width = '18vw';
+        document.getElementsByClassName('aws')[0].style.width = '19vw';
+        document.getElementsByClassName('node')[0].style.width = '15vw';
+        document.getElementsByClassName('photoshop')[0].style.width = '32vw';
+      } else {
+        document.getElementsByClassName('html')[0].style.width = '0';
+        document.getElementsByClassName('css')[0].style.width = '0';
+        document.getElementsByClassName('js')[0].style.width = '0';
+        document.getElementsByClassName('react')[0].style.width = '0';
+        document.getElementsByClassName('aws')[0].style.width = '0';
+        document.getElementsByClassName('node')[0].style.width = '0';
+        document.getElementsByClassName('photoshop')[0].style.width = '0';
+      }
+    });
     return (
       <div className="aboutPage">
         <div className="bout">
@@ -83,7 +102,7 @@ class About extends Component {
             <i className="fab fa-react" />
             <span className="bar-name">React</span>
           </div>
-          <div>
+          <div className="bar">
             <section className="base-bar" />
             <section className="percent-bar react" />
           </div>
@@ -91,7 +110,7 @@ class About extends Component {
             <i className="fab fa-aws" />
             <span className="bar-name">AWS</span>
           </div>
-          <div>
+          <div className="bar">
             <section className="base-bar" />
             <section className="percent-bar aws" />
           </div>
@@ -99,7 +118,7 @@ class About extends Component {
             <i className="fab fa-node" />
             <span className="bar-name">Node.JS</span>
           </div>
-          <div>
+          <div className="bar">
             <section className="base-bar" />
             <section className="percent-bar node" />
           </div>
@@ -112,7 +131,7 @@ class About extends Component {
             />
             <span className="bar-name">Photoshop</span>
           </div>
-          <div>
+          <div className="bar">
             <section className="base-bar" />
             <section className="percent-bar photoshop" />
           </div>
