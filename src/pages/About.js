@@ -60,48 +60,48 @@ class About extends Component {
             <span className="bar-name">HTML</span>
           </div>
           <div className="bar">
-            <hr className="base-bar" />
-            <hr className="percent-bar html" />
+            <section className="base-bar" />
+            <section className="percent-bar html" />
           </div>
           <div className="logo">
             <i className="fab fa-css3" />
             <span className="bar-name">CSS</span>
           </div>
           <div className="bar">
-            <hr className="base-bar" />
-            <hr className="percent-bar css" />
+            <section className="base-bar" />
+            <section className="percent-bar css" />
           </div>
           <div className="logo">
             <i className="fab fa-js-square" />
             <span className="bar-name">JavaScript</span>
           </div>
           <div className="bar">
-            <hr className="base-bar" />
-            <hr className="percent-bar js" />
+            <section className="base-bar" />
+            <section className="percent-bar js" />
           </div>
           <div className="logo">
             <i className="fab fa-react" />
             <span className="bar-name">React</span>
           </div>
           <div>
-            <hr className="base-bar" />
-            <hr className="percent-bar react" />
+            <section className="base-bar" />
+            <section className="percent-bar react" />
           </div>
           <div className="logo">
             <i className="fab fa-aws" />
             <span className="bar-name">AWS</span>
           </div>
           <div>
-            <hr className="base-bar" />
-            <hr className="percent-bar aws" />
+            <section className="base-bar" />
+            <section className="percent-bar aws" />
           </div>
           <div className="logo">
             <i className="fab fa-node" />
             <span className="bar-name">Node.JS</span>
           </div>
           <div>
-            <hr className="base-bar" />
-            <hr className="percent-bar node" />
+            <section className="base-bar" />
+            <section className="percent-bar node" />
           </div>
           <div className="logo">
             <img
@@ -113,8 +113,8 @@ class About extends Component {
             <span className="bar-name">Photoshop</span>
           </div>
           <div>
-            <hr className="base-bar" />
-            <hr className="percent-bar photoshop" />
+            <section className="base-bar" />
+            <section className="percent-bar photoshop" />
           </div>
         </div>
       </div>
