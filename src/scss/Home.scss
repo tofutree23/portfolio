@@ -56,3 +56,68 @@
         color: white;
     }
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .hello {
+        padding: 20vh 0 20vh;
+
+        font: {
+            size: 50px;
+        }
+    }
+
+    .desc {
+        font: {
+            size: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hello {
+        padding: 15vh 0 15vh;
+
+        font: {
+            size: 40px;
+        }
+    }
+
+    .desc {
+        font: {
+            size: 13px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hello {
+        padding: 10vh 0 10vh;
+
+        font: {
+            size: 30px;
+        }
+    }
+
+    .desc {
+        font: {
+            size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hello {
+        padding: 10vh 0 10vh;
+
+        font: {
+            size: 20px;
+        }
+    }
+
+    .desc {
+        font: {
+            size: 10px;
+        }
+    }
+}
