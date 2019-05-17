@@ -110,7 +110,7 @@ class About extends Component {
               src="https://img.icons8.com/metro/52/000000/adobe-photoshop.png"
               alt="photoshop"
             />
-            <span className="bar-name">photoshop</span>
+            <span className="bar-name">Photoshop</span>
           </div>
           <div>
             <hr className="base-bar" />
