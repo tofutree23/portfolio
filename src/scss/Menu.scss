@@ -1,117 +1,9 @@
 @import '../../node_modules/reset-css/sass/reset';
 
-@media (max-width: 1024px) {
-    .menu {
-        height: 10vh;
-        z-index: 1;
-    }
 
-    nav {
-        border-bottom: 5px dashed;
-        width: 100vw;
-        position: fixed;
-        background-color: white;
-
-        ul {
-            padding: 10px 0;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-
-            li {
-                font: {
-                    family: 'Montserrat', sans-serif;
-                    size: 20px;
-                }
-
-                text-decoration: none;
-                list-style: none;
-                border-left: 1px solid;
-                padding: 10px 80px;
-
-                &:first-child {
-                    border-left: none;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .menu {
-        height: 6vh;
-        z-index: 1;
-    }
-
-    nav {
-        border-bottom: 5px dashed;
-        width: 100vw;
-        position: fixed;
-        background-color: white;
-
-        ul {
-            padding: 10px 0;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-
-            li {
-                font: {
-                    family: 'Montserrat', sans-serif;
-                    size: 20px;
-                }
-
-                text-decoration: none;
-                list-style: none;
-                border-left: 1px solid;
-                padding: 10px 80px;
-
-                &:first-child {
-                    border-left: none;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 3px) {
-    .menu {
-        height: 10vh;
-        z-index: 1;
-    }
-
-    nav {
-        border-bottom: 5px dashed;
-        width: 100vw;
-        position: fixed;
-        background-color: white;
-
-        ul {
-            padding: 10px 0;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-
-            li {
-                font: {
-                    family: 'Montserrat', sans-serif;
-                    size: 20px;
-                }
-
-                text-decoration: none;
-                list-style: none;
-                border-left: 1px solid;
-                padding: 10px 80px;
-
-                &:first-child {
-                    border-left: none;
-                }
-            }
-        }
-    }
+.menu {
+    height: 10vh;
+    z-index: 1;
 }
 
 a {
@@ -126,7 +18,7 @@ nav {
 
     ul {
         padding: 10px 0;
-        width: 100%;
+        width: 100vw;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -137,13 +29,67 @@ nav {
                 size: 20px;
             }
 
-            text-decoration: none;
-            list-style: none;
             border-left: 1px solid;
             padding: 10px 80px;
 
             &:first-child {
                 border-left: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        ul {
+            li {
+                padding: 10px 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        border-bottom: 3px dashed;
+
+        ul {
+            li {
+                padding: 0 25px;
+
+                font: {
+                    size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        border-bottom: 2px dashed;
+
+        ul {
+            li {
+                padding: 0 15px;
+
+                font: {
+                    size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    nav {
+        border-bottom: 1px dashed;
+
+        ul {
+            li {
+                font: {
+                    size: 10px;
+                }
             }
         }
     }
