@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import AnalogClock from "../components/AnalogClock";
 
 class Portfolio extends Component {
     render() {
         return (
             <div>
-                <h2>This is my Portfolio page</h2>
+                <AnalogClock></AnalogClock>
             </div>
         );
     }
