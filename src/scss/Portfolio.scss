@@ -15,6 +15,7 @@
 }
 
 .clock {
+    z-index: -1;
     margin-top: 0;
     padding: .5rem;
 }
@@ -23,6 +24,7 @@
     display: flex;
     justify-content: center;
     padding: 4rem 0;
+    margin-bottom: 3rem;
     animation-duration: 1s;
     animation-name: slidein;
 
@@ -30,4 +32,25 @@
         family: 'Montserrat', sans-serif;
         size: 4rem;
     }
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.content {
+    width: 30rem;
+    height: 15rem;
+    margin: 0 3rem;
+    border: .2rem dashed rgba($color: #000000, $alpha: 0.5);
+    border-radius: 5%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    cursor: pointer;
 }
