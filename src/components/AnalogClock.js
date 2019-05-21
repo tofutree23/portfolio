@@ -12,13 +12,13 @@ class AnalogClock extends Component {
       const now = new Date();
 
       const sec = now.getSeconds();
-      const secondDegree = (sec / 60) * 360 + 90;
+      const secondDegree = Math.floor((sec / 60) * 360 + 90);
 
       const min = now.getMinutes();
-      const minuteDegree = (min / 60) * 360 + 90;
+      const minuteDegree = Math.floor((min / 60) * 360 + 90);
 
       const hour = now.getHours();
-      const hourDegree = (hour / 12) * 360 + 90;
+      const hourDegree = Math.floor((hour / 12) * 360 + 90);
 
       secondHand.style.transform = `rotate(${secondDegree}deg)`;
       minuteHand.style.transform = `rotate(${minuteDegree}deg)`;
