@@ -6,10 +6,28 @@
 
     display: flex;
     justify-content: center;
-    padding: 0 0 4rem;
+    padding: 4rem 0;
 
     font: {
         family: 'Montserrat', sans-serif;
         size: 2rem;
+    }
+}
+
+.clock {
+    margin-top: 0;
+    padding: .5rem;
+}
+
+.pofol {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    animation-duration: 1s;
+    animation-name: slidein;
+
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 4rem;
     }
 }
