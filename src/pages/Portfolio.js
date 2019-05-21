@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import AnalogClock from "../components/AnalogClock";
+import AnalogClock from '../components/AnalogClock';
 
 class Portfolio extends Component {
-    render() {
-        return (
-            <div>
-                <AnalogClock />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <AnalogClock />
+      </div>
+    );
+  }
 }
 
 export default Portfolio;
