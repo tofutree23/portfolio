@@ -43,7 +43,7 @@ class Portfolio extends Component {
             <AnalogClock className="clock" />
           </section>
           {/* 팝업창 띄우는 곳 */}
-          <div className="portpop">
+          <section className="dim-layer">
             <div className="dimBg" />
             <div className="pop-layer">
               <div className="pop-container">
@@ -56,7 +56,7 @@ class Portfolio extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     );
