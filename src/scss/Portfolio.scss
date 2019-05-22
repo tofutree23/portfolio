@@ -3,11 +3,6 @@
 }
 
 .aboutclock {
-
-    display: flex;
-    justify-content: center;
-    padding: 4rem 0;
-
     font: {
         family: 'Montserrat', sans-serif;
         size: 2rem;
@@ -16,14 +11,17 @@
 
 .clock {
     z-index: -1;
-    margin-top: 0;
     padding: .5rem;
+    margin: 0;
 }
 
+.clock-section {}
+
 .pofol {
+
+    padding: 20vh 0;
     display: flex;
     justify-content: center;
-    padding: 4rem 0;
     margin-bottom: 3rem;
     animation-duration: 1s;
     animation-name: slidein;
@@ -42,7 +40,7 @@
 
 .content {
     width: 30rem;
-    height: 15rem;
+    height: 12rem;
     margin: 0 3rem;
     border: .2rem dashed rgba($color: #000000, $alpha: 0.5);
     border-radius: 5%;

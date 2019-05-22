@@ -8,15 +8,16 @@
 
 .about {
     display: inline-block;
-    padding: 150px 0;
+    padding: 20vh 0;
+
+    animation-duration: 1s;
+    animation-name: slidein;
 
     font: {
         family: 'Montserrat', sans-serif;
         size: 4rem;
     }
 
-    animation-duration: 1s;
-    animation-name: slidein;
 }
 
 @keyframes slidein {
