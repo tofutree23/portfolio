@@ -5,10 +5,16 @@ import 'scss/Portfolio.scss';
 const webClick = () => {
   const dagabae = document.querySelector('.dagabae');
   const wetube = document.querySelector('.wetube');
+  const closeBtn = document.querySelector('.btn-layerClose');
+  const poppop = document.querySelector('.dim-layer');
 
-  const openPop = a => {
-    console.log(a);
+  const openPop = layer => {
+    poppop.style.display = 'block';
   };
+
+  closeBtn.addEventListener('click', () => {
+    poppop.style.display = 'none';
+  });
 
   dagabae.addEventListener('click', openPop.bind(this, 'dagabae'));
   wetube.addEventListener('click', openPop.bind(this, 'wetube'));
@@ -21,7 +27,7 @@ class Portfolio extends Component {
   render() {
     return (
       <div className="portfolio">
-        <h2 className="pofol">Portfolio</h2>
+        <h2 className="pofol">Works</h2>
         <div className="section">
           <section className="section content dagabae">
             <img
@@ -44,15 +50,20 @@ class Portfolio extends Component {
           </section>
           {/* 팝업창 띄우는 곳 */}
           <section className="dim-layer">
+            {/* 어두운 배경 div */}
             <div className="dimBg" />
+            {/* 레이어 팝업 */}
             <div className="pop-layer">
               <div className="pop-container">
-                <div className="pop-conts">
-                  <p className="contents" />
-                  <div className="btn-r">
-                    {/* eslint-disable-next-line */}
-                    <button className="btn-layerClose">Close</button>
-                  </div>
+                <div className="contents">
+                  <img
+                    src="https://raw.githubusercontent.com/tofutree23/Resources/master/img/thumb/we.PNG"
+                    alt="we-tube, the most popular streaming service youtube's clone"
+                  />
+                </div>
+                <div className="btn-r">
+                  {/* eslint-disable-next-line */}
+                  <button className="btn-layerClose">Close</button>
                 </div>
               </div>
             </div>
