@@ -3,8 +3,15 @@ import AnalogClock from 'components/AnalogClock';
 import 'scss/Portfolio.scss';
 
 const webClick = () => {
-  const one = document.querySelectorAll('.web');
-  console.log(one);
+  const dagabae = document.querySelector('.dagabae');
+  const wetube = document.querySelector('.wetube');
+
+  const openPop = a => {
+    console.log(a);
+  };
+
+  dagabae.addEventListener('click', openPop.bind(this, 'dagabae'));
+  wetube.addEventListener('click', openPop.bind(this, 'wetube'));
 };
 
 class Portfolio extends Component {
@@ -16,13 +23,13 @@ class Portfolio extends Component {
       <div className="portfolio">
         <h2 className="pofol">Portfolio</h2>
         <div className="section">
-          <section className="section content web dagabae">
+          <section className="section content dagabae">
             <img
               src="https://raw.githubusercontent.com/tofutree23/Resources/master/img/thumb/da.PNG"
               alt="dagabae, the shopping mall of coffee with tea"
             />
           </section>
-          <section className="section content web wetube">
+          <section className="section content wetube">
             <img
               src="https://raw.githubusercontent.com/tofutree23/Resources/master/img/thumb/we.PNG"
               alt="we-tube, the most popular streaming service youtube's clone"
