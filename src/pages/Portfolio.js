@@ -10,14 +10,16 @@ const webClick = () => {
 
   const openPop = layer => {
     poppop.style.display = 'block';
+    const imgSrc = layer.getElementsByTagName('img')[0].src;
+    poppop.getElementsByTagName('img')[0].src = imgSrc;
   };
 
   closeBtn.addEventListener('click', () => {
     poppop.style.display = 'none';
   });
 
-  dagabae.addEventListener('click', openPop.bind(this, 'dagabae'));
-  wetube.addEventListener('click', openPop.bind(this, 'wetube'));
+  dagabae.addEventListener('click', openPop.bind(this, dagabae));
+  wetube.addEventListener('click', openPop.bind(this, wetube));
 };
 
 class Portfolio extends Component {
@@ -57,8 +59,9 @@ class Portfolio extends Component {
               <div className="pop-container">
                 <div className="contents">
                   <img
-                    src="https://raw.githubusercontent.com/tofutree23/Resources/master/img/thumb/we.PNG"
-                    alt="we-tube, the most popular streaming service youtube's clone"
+                    src="http://www.bloter.net/wp-content/uploads/2019/01/google-logo-1-800x450.jpg"
+                    alt="Lorem"
+                    className="innerImg"
                   />
                 </div>
                 <div className="btn-r">
