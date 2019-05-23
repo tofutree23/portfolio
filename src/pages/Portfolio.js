@@ -11,13 +11,16 @@ const webClick = () => {
   const openPop = layer => {
     poppop.style.display = 'block';
     const imgSrc = layer.getElementsByTagName('img')[0].src;
-    poppop.getElementsByTagName('img')[0].src = imgSrc;
+    const imgTitle = poppop.getElementsByClassName('contents-title')[0];
 
     if (layer.className.indexOf('wetube') !== -1) {
-      console.log('This is Wetube');
+      imgTitle.innerHTML = 'Wetube';
+      poppop.getElementsByTagName('img')[0].alt = 'Wetube';
     } else {
-      console.log('This is dagabae');
+      imgTitle.innerHTML = 'Dagabae';
+      poppop.getElementsByTagName('img')[0].alt = 'Dagabae';
     }
+    poppop.getElementsByTagName('img')[0].src = imgSrc;
   };
 
   closeBtn.addEventListener('click', () => {
@@ -70,6 +73,15 @@ class Portfolio extends Component {
                     alt="Lorem"
                     className="innerImg"
                   />
+                  <div>
+                    <p className="contents-title">
+                      This is My Works. Enjoy! :)
+                    </p>
+                    <ul>
+                      <li>This is</li>
+                      <li>my jobs</li>
+                    </ul>
+                  </div>
                 </div>
                 <div className="btn-r">
                   {/* eslint-disable-next-line */}
