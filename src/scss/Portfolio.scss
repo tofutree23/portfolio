@@ -52,6 +52,7 @@ img {
 
 .innerImg {
   border-radius: 0;
+  cursor: default;
 }
 
 // PORTPOP SECTION
@@ -98,10 +99,13 @@ img {
     position: absolute;
     height: 30rem;
     top: 50%;
-    margin-top: -15rem; /* half of height */
+    margin-top: -15rem;
+    /* half of height */
     width: 60%;
-    left: 50%; /* 이렇게 주면 화면의 50% 위치에서 레이어가 시작됨 */
-    margin-left: -30%; /* half of width만큼 음수값의 마진을 주면 왼쪽으로 당겨져서 화면의 절반을 차지하게 되는 것 */
+    left: 50%;
+    /* 이렇게 주면 화면의 50% 위치에서 레이어가 시작됨 */
+    margin-left: -30%;
+    /* half of width만큼 음수값의 마진을 주면 왼쪽으로 당겨져서 화면의 절반을 차지하게 되는 것 */
     background-color: #fff;
     border: 5px solid rgba(0, 0, 0, 0.6);
     z-index: 10;

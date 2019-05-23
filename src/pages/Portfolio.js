@@ -12,6 +12,12 @@ const webClick = () => {
     poppop.style.display = 'block';
     const imgSrc = layer.getElementsByTagName('img')[0].src;
     poppop.getElementsByTagName('img')[0].src = imgSrc;
+
+    if (layer.className.indexOf('wetube') !== -1) {
+      console.log('This is Wetube');
+    } else {
+      console.log('This is dagabae');
+    }
   };
 
   closeBtn.addEventListener('click', () => {
@@ -26,6 +32,7 @@ class Portfolio extends Component {
   componentDidMount = () => {
     webClick();
   };
+
   render() {
     return (
       <div className="portfolio">
