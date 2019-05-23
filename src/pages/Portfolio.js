@@ -77,10 +77,12 @@ class Portfolio extends Component {
                     <p className="contents-title">
                       This is My Works. Enjoy! :)
                     </p>
-                    <ul>
-                      <li>This is</li>
-                      <li>my jobs</li>
-                    </ul>
+                    <div className="contents-desc">
+                      하나 둘 셋 넷
+                      <ul>
+                        <li>This is</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div className="btn-r">

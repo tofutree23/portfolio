@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src:
+        url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight:
+        normal;
+    font-style: normal;
+}
+
 .aboutPage {
     overflow-x: hidden;
 }
@@ -68,6 +77,10 @@
 
     .desc {
         line-height: 20px;
+
+        font: {
+            family: 'NIXGONM-Vb';
+        }
     }
 }
 
