@@ -12,12 +12,15 @@ const webClick = () => {
     poppop.style.display = 'block';
     const imgSrc = layer.getElementsByTagName('img')[0].src;
     const imgTitle = poppop.getElementsByClassName('contents-title')[0];
+    const desc = poppop.getElementsByClassName('contents-desc')[0];
 
     if (layer.className.indexOf('wetube') !== -1) {
       imgTitle.innerHTML = 'Wetube';
+      desc.innerHTML = 'dkdkdkdk';
       poppop.getElementsByTagName('img')[0].alt = 'Wetube';
     } else {
       imgTitle.innerHTML = 'Dagabae';
+      desc.innerHTML = 'dkdkdkdk';
       poppop.getElementsByTagName('img')[0].alt = 'Dagabae';
     }
     poppop.getElementsByTagName('img')[0].src = imgSrc;
