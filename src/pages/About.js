@@ -41,11 +41,17 @@ class About extends Component {
             <i className="fas fa-tachometer-alt" id="fast" />
             <p className="title">Fast</p>
             <p className="desc">
-              Lorem Culpa ea commodo anim culpa et quis esse consequat nostrud.
-              In aliquip aliqua adipisicing reprehenderit sunt reprehenderit qui
-              non id anim magna ex. Tempor labore ea sit proident dolore aliquip
-              in nostrud reprehenderit labore aute ullamco. Do elit cillum
-              aliquip laboris nulla.
+              처음 코딩을 시작한 것이 작년 10월입니다. Java를 통해서
+              프로그래밍의 가장 기본적인 반복문과 조건문, 객체와 클래스의 개념을
+              잡고 어플 '씀'에서 영감을 받아 바로 안드로이드 서비스를
+              개발해보았습니다. 문득 웹서비스란 어떤 것일지 궁금해졌고 LAMP를
+              통해 가장 기본적인 서버, 클라이언트 개념을 학습하게 되었습니다.
+              웹개발에 큰 매력을 느껴 올해 2월부터 본격적으로 JavaScript를
+              공부하기 시작, 지금에 이르렀습니다. 물론 지식의 깊이가 깊지는 않을
+              수 있습니다. 하지만 비전공자로서 반년도 채 되지 않는 기간동안
+              여기까지 해낼 수 있었다는 점이, 학습능력이 빠르다는 것을 보여주는
+              증거라고 생각합니다. 어느 분야보다 빠르게 변화하는 프론트엔드 개발
+              분야에서 빠른 습득력만큼 경쟁력있는 장점은 없다고 생각합니다.
             </p>
           </div>
           <div className="pro-content">
