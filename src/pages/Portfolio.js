@@ -8,6 +8,8 @@ const webClick = () => {
   const closeBtn = document.querySelector('.btn-layerClose');
   const poppop = document.querySelector('.dim-layer');
 
+  const video = document.querySelector('video');
+
   const openPop = layer => {
     poppop.style.display = 'block';
     const imgSrc = layer.getElementsByTagName('img')[0].src;
@@ -15,15 +17,23 @@ const webClick = () => {
     const desc = poppop.getElementsByClassName('contents-desc')[0];
 
     if (layer.className.indexOf('wetube') !== -1) {
+      video.style.display = 'none';
+      poppop.getElementsByTagName('img')[0].style.display = 'block';
       imgTitle.innerHTML = 'Wetube';
-      desc.innerHTML = 'dkdkdkdk';
+      desc.innerHTML =
+        '<h1>Wetube는 세계 굴지의 동영상 스트리밍 서비스, Youtube를 클론해서 만들어보았습니다.</h1>';
       poppop.getElementsByTagName('img')[0].alt = 'Wetube';
+      poppop.getElementsByTagName('img')[0].src = imgSrc;
     } else {
       imgTitle.innerHTML = 'Dagabae';
-      desc.innerHTML = 'dkdkdkdk';
-      poppop.getElementsByTagName('img')[0].alt = 'Dagabae';
+      video.style.display = 'block';
+      video.src =
+        'https://wetube-2.s3.ap-northeast-2.amazonaws.com/video/c6c40062ad9829744236aff4b2ae8e55';
+      video.controls = 'true';
+      video.alt = 'Dagabae';
+      desc.innerHTML = '다가배에서 마음의 평화를 찾으세요';
+      poppop.getElementsByTagName('img')[0].style.display = 'none';
     }
-    poppop.getElementsByTagName('img')[0].src = imgSrc;
   };
 
   closeBtn.addEventListener('click', () => {
@@ -76,6 +86,7 @@ class Portfolio extends Component {
                     alt="Lorem"
                     className="innerImg"
                   />
+                  <video />
                   <div>
                     <p className="contents-title">
                       This is My Works. Enjoy! :)

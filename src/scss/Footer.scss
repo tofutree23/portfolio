@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src:
+        url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight:
+        normal;
+    font-style: normal;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -7,6 +16,7 @@
         size: 18px;
     }
 }
+
 
 .copyright {
     color: #ff4646;
