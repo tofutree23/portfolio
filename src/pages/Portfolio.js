@@ -84,11 +84,11 @@ class Portfolio extends Component {
             <div className="pop-layer">
               <div className="pop-container">
                 <div className="contents">
-                  {/* eslint-disable-next-line */}
                   <a
                     className="imgA"
                     href="http://13.124.203.193:3000/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       src="http://www.bloter.net/wp-content/uploads/2019/01/google-logo-1-800x450.jpg"
@@ -110,7 +110,6 @@ class Portfolio extends Component {
                   </div>
                 </div>
                 <div className="btn-r">
-                  {/* eslint-disable-next-line */}
                   <button className="btn-layerClose">Close</button>
                 </div>
               </div>
