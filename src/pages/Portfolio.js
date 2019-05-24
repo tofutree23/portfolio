@@ -18,7 +18,10 @@ const webClick = () => {
 
     if (layer.className.indexOf('wetube') !== -1) {
       video.style.display = 'none';
-      poppop.getElementsByTagName('img')[0].style.display = 'block';
+      const upperTag = poppop.getElementsByClassName('contents')[0].innerHTML;
+      console.log(upperTag);
+      const imgTag = poppop.getElementsByTagName('img')[0];
+      imgTag.style.display = 'block';
       imgTitle.innerHTML = 'Wetube';
       desc.innerHTML =
         '<h1>Wetube는 세계 굴지의 동영상 스트리밍 서비스, Youtube를 클론해서 만들어보았습니다.</h1>';
@@ -81,11 +84,18 @@ class Portfolio extends Component {
             <div className="pop-layer">
               <div className="pop-container">
                 <div className="contents">
-                  <img
-                    src="http://www.bloter.net/wp-content/uploads/2019/01/google-logo-1-800x450.jpg"
-                    alt="Lorem"
-                    className="innerImg"
-                  />
+                  {/* eslint-disable-next-line */}
+                  <a
+                    className="imgA"
+                    href="http://13.124.203.193:3000/"
+                    target="_blank"
+                  >
+                    <img
+                      src="http://www.bloter.net/wp-content/uploads/2019/01/google-logo-1-800x450.jpg"
+                      alt="Lorem"
+                      className="innerImg"
+                    />
+                  </a>
                   <video />
                   <div>
                     <p className="contents-title">
