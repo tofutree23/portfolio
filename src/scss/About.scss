@@ -1,190 +1,186 @@
 @font-face {
-    font-family: 'NIXGONM-Vb';
-    src:
-        url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
-    font-weight:
-        normal;
-    font-style: normal;
+  font-family: 'NIXGONM-Vb';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .aboutPage {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .bout {
-    text-align: center;
+  text-align: center;
 }
 
 .about {
-    display: inline-block;
-    padding: 20vh 0;
+  display: inline-block;
+  padding: 20vh 0;
 
-    animation-duration: 1s;
-    animation-name: slidein;
+  animation-duration: 1s;
+  animation-name: slidein;
 
-    font: {
-        family: 'Montserrat', sans-serif;
-        size: 4rem;
-    }
-
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 4rem;
+  }
 }
 
 @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
 
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .stack {
-    display: inline-block;
-    padding: 150px 0 50px;
+  display: inline-block;
+  padding: 150px 0 50px;
 
-    font: {
-        family: 'Montserrat', sans-serif;
-        size: 4rem;
-    }
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 4rem;
+  }
 }
 
 .pros {
-    display: grid;
-    grid-gap: 2rem;
-    margin: 0 60px;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-gap: 2rem;
+  margin: 0 60px;
+  grid-template-columns: repeat(4, 1fr);
 
-    .title {
-        margin-bottom: 3rem;
+  .title {
+    margin-bottom: 3rem;
 
-        font: {
-            size: 2rem;
-            family: 'Montserrat', sans-serif;
-        }
+    font: {
+      size: 2rem;
+      family: 'Montserrat', sans-serif;
     }
+  }
 }
 
 .pro-content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    word-break: break-all;
-    padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  word-break: break-all;
+  padding: 10px;
 
-    .desc {
-        line-height: 2rem;
-        text-align: justify;
+  .desc {
+    line-height: 2rem;
+    text-align: justify;
 
-        font: {
-            family: 'NIXGONM-Vb';
-        }
+    font: {
+      family: 'NIXGONM-Vb';
     }
+  }
 }
 
 .fas {
+  font: {
+    size: 6rem;
+  }
 
-    font: {
-        size: 6rem;
-
-    }
-
-    padding: 30px 60px;
+  padding: 30px 60px;
 }
 
 .far {
-    font: {
-        size: 6rem;
-    }
+  font: {
+    size: 6rem;
+  }
 
-    padding: 30px 60px;
+  padding: 30px 60px;
 }
 
 .fab {
-    z-index: -1;
-    opacity: 0.9;
+  z-index: -1;
+  opacity: 0.9;
 
-    font: {
-        size: 4.5rem;
-    }
+  font: {
+    size: 4.5rem;
+  }
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bar {
-    z-index: -1;
-    display: flex;
-    align-items: center;
+  z-index: -1;
+  display: flex;
+  align-items: center;
 }
 
 .skills {
-    margin: 5rem 15rem;
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: 1fr 3fr;
+  margin: 5rem 15rem;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: 1fr 3fr;
 
-    font: {
-        size: 4rem;
-    }
+  font: {
+    size: 4rem;
+  }
 }
 
 .base-bar {
-    position: absolute;
-    border: solid 15px lightgrey;
-    min-width: 40vw;
-    opacity: 0.7;
+  position: absolute;
+  border: solid 15px lightgrey;
+  min-width: 40vw;
+  opacity: 0.7;
 }
 
 .percent-bar {
-    position: absolute;
-    border: solid 15px #004655;
+  position: absolute;
+  border: solid 15px #004655;
 }
 
 .bar-name {
-    font: {
-        size: 1.5rem;
-        family: 'Montserrat', sans-serif;
-    }
+  font: {
+    size: 1.5rem;
+    family: 'Montserrat', sans-serif;
+  }
 }
 
 .html {
-    width: 0;
-    transition: 1.5s 0.2s width ease-in-out;
+  width: 0;
+  transition: 1.5s 0.2s width ease-in-out;
 }
 
 .css {
-    width: 0;
-    transition: 1.5s 0.2s width ease-in-out;
+  width: 0;
+  transition: 1.5s 0.2s width ease-in-out;
 }
 
 .js {
-    width: 0;
-    transition: 1.5s 0.2s width ease-in-out;
+  width: 0;
+  transition: 1.5s 0.2s width ease-in-out;
 }
 
 .react {
-    width: 0;
-    transition: 1.5s 0.2s width ease-in-out;
+  width: 0;
+  transition: 1.5s 0.2s width ease-in-out;
 }
 
 .aws {
-    width: 0;
-    transition: 1.5s 0.2s width ease-in-out;
+  width: 0;
+  transition: 1.5s 0.2s width ease-in-out;
 }
 
 .node {
-    width: 0;
-    transition: 1.5s 0.2s width ease-in-out;
+  width: 0;
+  transition: 1.5s 0.2s width ease-in-out;
 }
 
 .photoshop {
-    width: 0;
-    transition: 1.5s 0.2s width ease-in-out;
+  width: 0;
+  transition: 1.5s 0.2s width ease-in-out;
 }

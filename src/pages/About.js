@@ -41,47 +41,53 @@ class About extends Component {
             <i className="fas fa-tachometer-alt" id="fast" />
             <p className="title">Fast</p>
             <p className="desc">
-              처음 코딩을 시작한 것이 작년 10월입니다. Java를 통해서
-              프로그래밍의 가장 기본적인 반복문과 조건문, 객체와 클래스의 개념을
-              잡고 어플 '씀'에서 영감을 받아 바로 안드로이드 서비스를
-              개발해보았습니다. 문득 웹서비스란 어떤 것일지 궁금해졌고 LAMP를
-              통해 가장 기본적인 서버, 클라이언트 개념을 학습하게 되었습니다.
-              웹개발에 큰 매력을 느껴 올해 2월부터 본격적으로 JavaScript를
-              공부하기 시작, 지금에 이르렀습니다. 물론 지식의 깊이가 깊지는 않을
-              수 있습니다. 하지만 비전공자로서 반년도 채 되지 않는 기간동안
-              여기까지 해낼 수 있었다는 점이, 학습능력이 빠르다는 것을 보여주는
-              증거라고 생각합니다. 어느 분야보다 빠르게 변화하는 프론트엔드 개발
-              분야에서 빠른 습득력만큼 경쟁력있는 장점은 없다고 생각합니다.
-            </p>
-          </div>
-          <div className="pro-content">
-            <i className="fas fa-sync-alt" id="responsibility" />
-            <p className="title">Responsive</p>
-            <p className="desc">
-              Duis ullamco est dolore cillum irure nulla ex. Duis pariatur
-              laborum labore culpa consequat ea. Lorem cillum eiusmod duis culpa
-              proident culpa eiusmod dolor amet proident sit enim et.
-            </p>
-          </div>
-          <div className="pro-content">
-            <i className="far fa-comments" id="communicate" />
-            <p className="title">Communicative</p>
-            <p className="desc">
-              Mollit ullamco cupidatat eu pariatur dolor. In deserunt qui labore
-              quis sint quis esse commodo officia. Reprehenderit magna ipsum
-              pariatur officia. Cupidatat ex nisi excepteur sint enim dolore
-              enim velit sint ut do qui.
+              하루가 멀다하고 새로운 기술이 쏟아져나오는 프론트엔드 개발
+              분야에서, 빠른 습득력은 꼭 필요한 덕목이죠. 하지만 빠름이 단순히
+              속도만을 의미하는 것은 아닐겁니다. 속도만을 중시해서 대충 배우는
+              건 안하느니만 못하죠. 전 중요한 부분과 상대적으로 덜 중요한 부분을
+              나누어서 학습할 수 있는 능력이 있다고 생각합니다. 저는 불과 반년
+              전까지만 해도 프로그래밍의 P자도 몰랐던 생초보였거든요. 놀랍게도
+              지금까지의 학습은, 맨 처음 2개월을 제외하면 모두 독학으로
+              이루어졌답니다.
             </p>
           </div>
           <div className="pro-content">
             <i className="far fa-lightbulb" id="creative" />
             <p className="title">Creative</p>
             <p className="desc">
-              Amet consequat dolor tempor ea. Amet adipisicing elit consequat et
-              qui. Exercitation do non amet fugiat excepteur consequat id mollit
-              id cupidatat est sint. Excepteur consequat et irure proident
-              consequat aute voluptate enim est magna. Fugiat sunt minim ullamco
-              ut velit ut sunt eiusmod proident anim magna excepteur.
+              저는 프로그래밍을 하기 전, 광고 기획사에서 일을 한 적이 있습니다.
+              그곳에서 주로 담당한 업무는 광고를 기획하고, 카피를 쓰는
+              일이었는데요, 이런 창의력이 UI/UX를 개발하는 데에 있어서도 충분히
+              발휘될 수 있으리라고 믿습니다. 중요한 건, 저는 이러한 쪽으로
+              머리를 쓰는 걸 매우 즐긴답니다 :)
+            </p>
+          </div>
+          <div className="pro-content">
+            <i className="far fa-comments" id="communicate" />
+            <p className="title">Communicative</p>
+            <p className="desc">
+              지난 직장에서 맡았던 AE라는 직무는 고객과 직접적으로
+              커뮤니케이션을 하는 직무입니다. 당연히 실무진과 고객과의
+              이해관계를 조율해야하는 일이 비일비재했죠. 고객의 요구를 어느 정도
+              수용하면서도 실무진이 불편하지 않도록 균형을 잡는 건 쉬운 일이
+              아닙니다. 개발과정에서 기획자와 디자이너, 개발자의 의견충돌은
+              불가피한 일일겁니다. 그중에서 특히 개발자는 불통이라는 이미지가
+              있는 것 같아요. 저는 저의 경험을 살려, 타 직무와도 소통하는
+              개발자가 될 수 있을 것 같습니다.
+            </p>
+          </div>
+          <div className="pro-content">
+            <i className="fas fa-sync-alt" id="responsibility" />
+            <p className="title">Responsive</p>
+            <p className="desc">
+              업무를 하다보면 뜻밖의 상황이 언제나 생깁니다. 그건 막으려야 막을
+              수도 없고 피하려야 피할 수도 없는 경우가 다반사죠. 뜻밖의 상황에서
+              능동적으로 대처할 줄 안다는 것은 중요해요. 콜센터에서 알바를 하던
+              대학 시절이 있었습니다. 콜센터만큼 돌발상황이 자주, 또 격하게
+              발생하는 직종도 잘 없어요. 그리고 그런 대부분의 경우에서 상담사는
+              기민하게 상황을 판단하고 능동적으로 대응해야하죠. 그리고 저는
+              대부분의 경우에 유연한 대응으로 상황을 가급적 좋은 쪽으로 이끌어
+              냈습니다.
             </p>
           </div>
         </div>
