@@ -43,6 +43,9 @@ const webClick = () => {
       <li>댓글 달기</li>
       <li>비디오 검색</li>
       <li>회원 페이지</li>
+      <br/>
+      <p id="usedSkill">소스 보기</p>
+      <button id="git-button"><a href="https://github.com/tofutree23/wetube" target="_blank"><span><i class="fab fa-github"></i></span>Github</a></button>
       `;
       poppop.getElementsByTagName('img')[0].alt = 'Wetube';
       poppop.getElementsByTagName('img')[0].src = imgSrc;
@@ -73,6 +76,9 @@ const webClick = () => {
       <li>관리자 페이지(상품 등록, 상품 수정, 상품 삭제, 게시판 관리 등)</li>
       <li>상품결제</li>
       <li>장바구니</li>
+      <br/>
+      <p id="usedSkill">소스 보기</p>
+      <button id="git-button"><a href="https://github.com/tofutree23/dagabae" target="_blank"><span><i class="fab fa-github"></i></span>Github</a></button>
       `;
       poppop.getElementsByTagName('img')[0].style.display = 'none';
     }

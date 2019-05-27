@@ -194,3 +194,36 @@ video {
     size: 1.4rem;
   }
 }
+
+.fa-github {
+  justify-content: center;
+  align-items: center;
+  padding: .1rem;
+  margin-right: .4rem;
+
+  font: {
+    size: 2rem;
+  }
+
+}
+
+#git-button {
+  background-color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  font-family: 'NIXGONM-Vb';
+
+  a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}
