@@ -6,18 +6,22 @@ const scrollEvent = () => {
     document.getElementsByClassName('html')[0].style.width = '33vw';
     document.getElementsByClassName('css')[0].style.width = '30vw';
     document.getElementsByClassName('js')[0].style.width = '28vw';
+    document.getElementsByClassName('php')[0].style.width = '33vw';
     document.getElementsByClassName('react')[0].style.width = '18vw';
     document.getElementsByClassName('aws')[0].style.width = '19vw';
     document.getElementsByClassName('node')[0].style.width = '15vw';
     document.getElementsByClassName('photoshop')[0].style.width = '32vw';
+    document.getElementsByClassName('firebase')[0].style.width = '20vw';
   } else {
     document.getElementsByClassName('html')[0].style.width = '0';
     document.getElementsByClassName('css')[0].style.width = '0';
     document.getElementsByClassName('js')[0].style.width = '0';
+    document.getElementsByClassName('php')[0].style.width = '0';
     document.getElementsByClassName('react')[0].style.width = '0';
     document.getElementsByClassName('aws')[0].style.width = '0';
     document.getElementsByClassName('node')[0].style.width = '0';
     document.getElementsByClassName('photoshop')[0].style.width = '0';
+    document.getElementsByClassName('firebase')[0].style.width = '0';
   }
 };
 
@@ -120,6 +124,14 @@ class About extends Component {
             <section className="percent-bar js" />
           </div>
           <div className="logo">
+            <i className="fab fa-php" />
+            <span className="bar-name">PHP</span>
+          </div>
+          <div className="bar">
+            <section className="base-bar" />
+            <section className="percent-bar php" />
+          </div>
+          <div className="logo">
             <i className="fab fa-react" />
             <span className="bar-name">React</span>
           </div>
@@ -134,6 +146,23 @@ class About extends Component {
           <div className="bar">
             <section className="base-bar" />
             <section className="percent-bar aws" />
+          </div>
+          <div className="logo">
+            <img
+              style={{
+                width: '52px',
+                height: '75px',
+                filter: 'grayscale(100%) brightness(15%)',
+              }}
+              className="fab fa-firebase"
+              src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png?hl=ko"
+              alt="firebase"
+            />
+            <span className="bar-name">Firebase</span>
+          </div>
+          <div className="bar">
+            <section className="base-bar" />
+            <section className="percent-bar firebase" />
           </div>
           <div className="logo">
             <i className="fab fa-node" />
