@@ -7,7 +7,6 @@ class Contact extends Component {
   componentDidMount = () => {
     const email = document.getElementById('sendMail');
     const board = document.getElementById('board');
-    const github = document.getElementById('github');
     const mailing = document.getElementsByClassName('mailing');
     const dashBoard = document.getElementsByClassName('dashBoard');
 
@@ -19,10 +18,6 @@ class Contact extends Component {
     board.addEventListener('click', () => {
       mailing[0].style.display = 'none';
       dashBoard[0].style.display = 'flex';
-    });
-
-    github.addEventListener('click', () => {
-      console.log('github clicked');
     });
   };
   render() {

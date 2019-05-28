@@ -11,8 +11,8 @@ class Mailing extends Component {
           action="https://formspree.io/tofutree23@gmail.com"
         >
           <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your email" required />
-          <textarea name="message" placeholder="Your message" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required />
           <div className="button">
             <button id="btn" type="submit">
               Send

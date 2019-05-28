@@ -5,3 +5,21 @@
     padding: 1rem;
     width: 100%;
 }
+
+.boardTable {
+    border-top: 1px solid #444444;
+
+    font: {
+        family: 'NIXGONM-Vb';
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid #444444;
+        padding: 10px;
+    }
+
+    th {
+        font-weight: bolder;
+    }
+}
