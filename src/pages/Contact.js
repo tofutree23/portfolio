@@ -4,8 +4,10 @@ import Mailing from 'components/Mailing';
 class Contact extends Component {
   render() {
     return (
-      <div>
-        <h2>If you wanna hire me, plz contact here</h2>
+      <div className="contact-page">
+        <div className="bout">
+          <h2 className="about">Contact</h2>
+        </div>
         <Mailing />
       </div>
     );
