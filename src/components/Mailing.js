@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import 'scss/Mailing.scss';
-import axios from 'axios';
 
 class Mailing extends Component {
   render() {
@@ -15,7 +14,9 @@ class Mailing extends Component {
           <input type="email" name="email" placeholder="Your email" required />
           <textarea name="message" placeholder="Your message" required />
           <div className="button">
-            <button type="submit">Send</button>
+            <button id="btn" type="submit">
+              Send
+            </button>
           </div>
         </form>
       </div>

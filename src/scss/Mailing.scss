@@ -2,6 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
+    width: 100%;
 }
 
 form {
@@ -40,7 +42,7 @@ textarea {
     margin-top: 2rem;
 }
 
-button {
+#btn {
     background-color: black;
     color: white;
     border: none;
