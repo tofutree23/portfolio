@@ -40,7 +40,11 @@ class Contact extends Component {
             />
           </button>
           <button className="ct-btn" id="github">
-            <a href="https://github.com/tofutree23" target="_blank">
+            <a
+              href="https://github.com/tofutree23"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="https://img.icons8.com/windows/64/000000/github.png"
                 alt="github"

@@ -17,9 +17,15 @@
     td {
         border-bottom: 1px solid #444444;
         padding: 10px;
+
+
     }
 
     th {
         font-weight: bolder;
     }
+}
+
+.tableContents:hover {
+    background: rgba(0, 0, 0, 0.2);
 }
