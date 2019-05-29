@@ -111,7 +111,9 @@ class InputBoard extends Component {
             onChange={this.handleChange}
             required
           />
-          <button type="submit">Upload</button>
+          <button id="updateBtn" type="submit">
+            Upload
+          </button>
         </form>
       </div>
     );
