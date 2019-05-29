@@ -1,13 +1,14 @@
 .dashBoard {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     padding: 1rem;
     width: 100%;
 }
 
 .boardTable {
     border-top: 1px solid #444444;
+    width: 50%;
+    margin: auto;
+    table-layout: fixed;
 
     font: {
         family: 'NIXGONM-Vb';
@@ -17,8 +18,9 @@
     td {
         border-bottom: 1px solid #444444;
         padding: 10px;
-
-
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     th {
@@ -28,4 +30,22 @@
 
 .tableContents:hover {
     background: rgba(0, 0, 0, 0.2);
+}
+
+.inputForm {
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+
+    font: {
+        family: 'NIXGONM-Vb';
+    }
+}
+
+#nameOf {
+    width: 20%;
+}
+
+#contentsOf {
+    width: 80%;
 }

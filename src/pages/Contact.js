@@ -17,7 +17,7 @@ class Contact extends Component {
 
     board.addEventListener('click', () => {
       mailing[0].style.display = 'none';
-      dashBoard[0].style.display = 'flex';
+      dashBoard[0].style.display = 'block';
     });
   };
   render() {

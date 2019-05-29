@@ -3,20 +3,42 @@ import 'scss/DashBoard.scss';
 
 class DashBoard extends Component {
   state = {
+    currentNo: 4,
     boards: [
       {
         bno: 1,
-        bwriter: 'Me',
-        btitle: 'Hello',
+        bwriter: '종형',
+        btitle: '일촌평과 같이 글을 남길 수 있는 형태의 게시판입니다.',
         bdate: new Date(),
       },
       {
         bno: 2,
-        bwriter: 'You',
-        btitle: 'Hi',
+        bwriter: '종형',
+        btitle: '다만 이 게시판은 저장이 되지 않습니다. (no-DB)',
+        bdate: new Date(),
+      },
+      {
+        bno: 3,
+        bwriter: '종형',
+        btitle: '단순히 게시판 형태의 구현을 위해 만들어둔 페이지이므로',
+        bdate: new Date(),
+      },
+      {
+        bno: 4,
+        bwriter: '종형',
+        btitle: '문의는 이메일을 클릭해서 남겨주시면 감사하겠습니다.',
         bdate: new Date(),
       },
     ],
+  };
+  handleDataSave = data => {
+    this.setState({
+      boards: this.state.boards.concat({
+        bno: this.setState.currentNo++,
+        bdate: new Date(),
+        ...data,
+      }),
+    });
   };
   render() {
     const { boards } = this.state;
@@ -25,10 +47,10 @@ class DashBoard extends Component {
         <table className="boardTable">
           <tbody>
             <tr align="center">
-              <th width="50">No.</th>
-              <th width="250">Title</th>
-              <th width="100">Name</th>
-              <th width="100">Date</th>
+              <th width="50rem">No.</th>
+              <th width="250rem">Comment</th>
+              <th width="80rem">Name</th>
+              <th width="80rem">Date</th>
             </tr>
             {boards.reverse().map(board => (
               // brdRow라는 변수에 map인 board를 넣어서 BoardItem 컴포넌트로 보낸다. 보내는 순간 보드아이템 컴포넌트는 자식이 된다.
@@ -37,6 +59,45 @@ class DashBoard extends Component {
             ))}
           </tbody>
         </table>
+        <InputBoard onDataSave={this.handleDataSave} />
+      </div>
+    );
+  }
+}
+
+class InputBoard extends Component {
+  state = {};
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    this.props.onDataSave(this.state);
+    this.setState({});
+  };
+
+  render() {
+    return (
+      <div className="inputBoard">
+        <form className="inputForm" onSubmit={this.handleSubmit}>
+          <input
+            id="nameOf"
+            type="text"
+            placeholder="Name"
+            onChange={this.handleChange}
+            required
+          />
+          <input
+            id="contentsOf"
+            type="text"
+            placeholder="Comment(공백 포함 최대 30자)"
+            onChange={this.handleChange}
+            required
+          />
+          <button type="submit">Upload</button>
+        </form>
       </div>
     );
   }
