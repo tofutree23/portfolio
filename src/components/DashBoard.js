@@ -42,6 +42,12 @@ class DashBoard extends Component {
       }),
     });
   };
+  // 삭제하는 방법
+  handleRemove = bno => {
+    this.setState({
+      boards: this.state.boards.filter(row => row.bno !== bno),
+    });
+  };
 
   render() {
     const { boards } = this.state;
@@ -54,6 +60,7 @@ class DashBoard extends Component {
               <th width="250rem">Comment</th>
               <th width="80rem">Name</th>
               <th width="80rem">Date</th>
+              <th width="10rem">Del</th>
             </tr>
             {/* brdRow라는 변수에 map인 board를 넣어서 BoardItem 컴포넌트로 보낸다. 보내는 순간 보드아이템 컴포넌트는 자식이 된다.
             brdRow라는 변수는 보드아이템에서 사용할 변수명이다. 부모에서 지정해준 거니까 props로 사용해야 한다. */}
@@ -62,7 +69,11 @@ class DashBoard extends Component {
               .slice(0)
               .reverse()
               .map(board => (
-                <BoardItem key={board.bno} brdRow={board} />
+                <BoardItem
+                  key={board.bno}
+                  brdRow={board}
+                  onRemove={this.handleRemove}
+                />
               ))}
           </tbody>
         </table>
@@ -121,6 +132,12 @@ class InputBoard extends Component {
 }
 
 class BoardItem extends Component {
+  handleRemove = () => {
+    const { brdRow, onRemove } = this.props;
+    console.log('row', brdRow, this.props);
+    onRemove(brdRow.bno);
+  };
+
   render() {
     return (
       <tr className="tableContents" align="center">
@@ -128,6 +145,9 @@ class BoardItem extends Component {
         <td>{this.props.brdRow.btitle}</td>
         <td>{this.props.brdRow.bwriter}</td>
         <td>{this.props.brdRow.bdate.toLocaleDateString('ko-KR')}</td>
+        <td>
+          <button onClick={this.handleRemove}>X</button>
+        </td>
       </tr>
     );
   }
