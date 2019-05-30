@@ -146,7 +146,9 @@ class BoardItem extends Component {
         <td>{this.props.brdRow.bwriter}</td>
         <td>{this.props.brdRow.bdate.toLocaleDateString('ko-KR')}</td>
         <td>
-          <button onClick={this.handleRemove}>X</button>
+          <button id="delBtn" onClick={this.handleRemove}>
+            X
+          </button>
         </td>
       </tr>
     );
