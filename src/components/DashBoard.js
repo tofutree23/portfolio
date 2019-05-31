@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import 'scss/DashBoard.scss';
 
 class DashBoard extends Component {
+  constructor(props) {
+    super(props);
+    this.child = React.createRef();
+  }
+
   state = {
     currentNo: 5,
     boards: [
@@ -33,20 +38,33 @@ class DashBoard extends Component {
   };
   // 넘겨받은 data를 저장하는 함수
   handleDataSave = data => {
-    this.setState({
-      currentNo: this.state.currentNo + 1,
-      boards: this.state.boards.concat({
-        bno: this.state.currentNo,
-        bdate: new Date(),
-        ...data,
-      }),
-    });
+    let boards = this.state.boards;
+    if (data.bno === null || data.bno === '' || data.bno === undefined) {
+      // 새로운 글이라면
+      this.setState({
+        currentNo: this.state.currentNo + 1,
+        boards: this.state.boards.concat({
+          bno: this.state.currentNo,
+          bdate: new Date(),
+          ...data,
+        }),
+      });
+    } else {
+      // 수정하는 부분이라면
+      this.setState({
+        boards: boards.map(row => (data.bno === row.bno ? { ...data } : row)),
+      });
+    }
   };
-  // 삭제하는 방법
+  // 삭제
   handleRemove = bno => {
     this.setState({
       boards: this.state.boards.filter(row => row.bno !== bno),
     });
+  };
+  // 수정
+  handleModify = row => {
+    this.child.current.handleModify(row);
   };
 
   render() {
@@ -73,11 +91,12 @@ class DashBoard extends Component {
                   key={board.bno}
                   brdRow={board}
                   onRemove={this.handleRemove}
+                  onModify={this.handleModify}
                 />
               ))}
           </tbody>
         </table>
-        <InputBoard onDataSave={this.handleDataSave} />
+        <InputBoard onDataSave={this.handleDataSave} ref={this.child} />
       </div>
     );
   }
@@ -85,10 +104,12 @@ class DashBoard extends Component {
 
 class InputBoard extends Component {
   // 내부에서 사용할 state
-  state = {};
+  state = { bwriter: '', btitle: '' };
+  handleModify = row => {
+    this.setState(row);
+  };
   // input이 바뀔 때마다 호출될 함수 input에 있는 target의 이름에 밸류를 놓고 state에 저장
   handleChange = e => {
-    // this가 의미하는 건 컴포넌트 내의 변수나 함수를 의미하므로 this를 사용해줘야지 얘가 이 컴포넌트 내부 얘기란 걸 알아먹는다
     this.setState({ [e.target.name]: e.target.value });
   };
 
@@ -99,7 +120,9 @@ class InputBoard extends Component {
     // 그리고 정보자체는 여기에 있으니 this.state로 넘겨주자
     this.props.onDataSave(this.state);
     // 데이터를 저장해주었기 때문에 state는 초기화시켜야한다
-    this.setState({});
+    this.setState({ bwriter: '', btitle: '' });
+    document.getElementsByName('bwriter')[0].value = '';
+    document.getElementsByName('btitle')[0].value = '';
   };
 
   render() {
@@ -112,6 +135,7 @@ class InputBoard extends Component {
             name="bwriter"
             placeholder="Name"
             onChange={this.handleChange}
+            value={this.state.bwriter}
             required
           />
           <input
@@ -120,6 +144,7 @@ class InputBoard extends Component {
             name="btitle"
             placeholder="Comment(공백 포함 최대 30자)"
             onChange={this.handleChange}
+            value={this.state.btitle}
             required
           />
           <button id="updateBtn" type="submit">
@@ -134,15 +159,22 @@ class InputBoard extends Component {
 class BoardItem extends Component {
   handleRemove = () => {
     const { brdRow, onRemove } = this.props;
-    console.log('row', brdRow, this.props);
     onRemove(brdRow.bno);
+  };
+
+  handleModify = () => {
+    const { brdRow, onModify } = this.props;
+    onModify(brdRow);
   };
 
   render() {
     return (
       <tr className="tableContents" align="center">
         <td>{this.props.brdRow.bno}</td>
-        <td>{this.props.brdRow.btitle}</td>
+        <td>
+          {/* eslint-disable-next-line */}
+          <a onClick={this.handleModify}>{this.props.brdRow.btitle}</a>
+        </td>
         <td>{this.props.brdRow.bwriter}</td>
         <td>{this.props.brdRow.bdate.toLocaleDateString('ko-KR')}</td>
         <td>
