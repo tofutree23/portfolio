@@ -4,8 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from 'shared/App';
 
 const Root = () => (
-  <BrowserRouter>
-    {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>
 );
