@@ -18,8 +18,6 @@ const webClick = () => {
 
     if (layer.className.indexOf('wetube') !== -1) {
       video.style.display = 'none';
-      const upperTag = poppop.getElementsByClassName('contents')[0].innerHTML;
-      console.log(upperTag);
       const imgTag = poppop.getElementsByTagName('img')[0];
       imgTag.style.display = 'block';
       imgTitle.innerHTML = 'Wetube';
