@@ -121,7 +121,7 @@
 .base-bar {
     position: absolute;
     border: solid 15px lightgrey;
-    min-width: 40vw;
+    width: 40vw;
     opacity: 0.7;
 }
 
@@ -182,9 +182,23 @@
     transition: 1.5s 0.2s width ease-in-out;
 }
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1375px) {
+    .pros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 1137px) {
+    .pros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pros {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 @media only screen and (max-width: 480px) {}
 
