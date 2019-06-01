@@ -90,16 +90,16 @@
     size: 4.5rem;
   }
 }
-
+.fa-firebase {
+  width: 52px;
+  height: 75px;
+}
+.fa-ps {
+  width: 52px;
+}
 .logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.bar {
-  z-index: -1;
-  display: flex;
   align-items: center;
 }
 
@@ -111,6 +111,12 @@
   font: {
     size: 4rem;
   }
+}
+
+.bar {
+  z-index: -1;
+  display: flex;
+  align-items: center;
 }
 
 .base-bar {
@@ -192,6 +198,23 @@
     }
     padding: 30px 60px;
   }
+  .fab {
+    font: {
+      size: 3.5rem;
+    }
+  }
+  .bar-name {
+    font: {
+      size: 1rem;
+    }
+  }
+  .base-bar {
+    border: solid 10px lightgrey;
+  }
+
+  .percent-bar {
+    border: solid 10px #004655;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -212,6 +235,14 @@
     font: {
       size: 2.5rem;
     }
+  }
+  .fa-firebase {
+    width: 42px;
+    height: 55px;
+  }
+  .fa-ps {
+    width: 42px;
+    height: 42px;
   }
 }
 
@@ -235,6 +266,21 @@
   .far {
     font: {
       size: 3rem;
+    }
+  }
+  .fab {
+    font: {
+      size: 2.5rem;
+    }
+  }
+  .fa-firebase {
+    style {
+      width: 32px;
+    }
+  }
+  .bar-name {
+    font: {
+      size: 0.5rem;
     }
   }
 }

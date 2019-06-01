@@ -150,8 +150,6 @@ class About extends Component {
           <div className="logo">
             <img
               style={{
-                width: '52px',
-                height: '75px',
                 filter: 'grayscale(100%) brightness(15%)',
               }}
               className="fab fa-firebase"
@@ -174,7 +172,6 @@ class About extends Component {
           </div>
           <div className="logo">
             <img
-              style={{ width: '52px' }}
               className="fab fa-ps"
               src="https://img.icons8.com/metro/52/000000/adobe-photoshop.png"
               alt="photoshop"
