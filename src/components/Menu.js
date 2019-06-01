@@ -9,17 +9,25 @@ const Menu = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link className="link" to="/">
+              Home
+            </Link>
           </li>
           {/* <li><a href="/">CLICK</a></li> <- 얘 쓰면 안됨. 새로고쳐짐.*/}
           <li>
-            <Link to="/about">About</Link>
+            <Link className="link" to="/about">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/works">Works</Link>
+            <Link className="link" to="/works">
+              Works
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link className="link" to="/contact">
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
