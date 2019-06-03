@@ -24,7 +24,7 @@
     background: none;
     margin: 0 2rem;
     width: 4.5rem;
-    height: 4rem;
+    height: auto;
     outline: none;
     &:hover {
         filter: drop-shadow(0px 0px 20px black);
@@ -35,11 +35,17 @@
     .contact {
         font-size: 3.5rem;
     }
+    .ct-btn {
+        width: 4rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .contact {
         font-size: 3rem;
+    }
+    .ct-btn {
+        width: 3.5rem;
     }
 }
 
@@ -47,10 +53,16 @@
     .contact {
         font-size: 2.5rem;
     }
+    .ct-btn {
+        width: 3rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
     .contact {
         font-size: 2rem;
+    }
+    .ct-btn {
+        width: 2.5rem;
     }
 }

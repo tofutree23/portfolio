@@ -144,6 +144,8 @@ class Portfolio extends Component {
                     width="100%"
                     height="auto"
                     playsInline
+                    autoPlay
+                    muted
                   />
                   <div>
                     <p className="contents-title">
