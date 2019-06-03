@@ -139,7 +139,12 @@ class Portfolio extends Component {
                       className="innerImg"
                     />
                   </a>
-                  <video type="video/mp4" />
+                  <video
+                    type="video/mp4"
+                    width="100%"
+                    height="auto"
+                    playsInline
+                  />
                   <div>
                     <p className="contents-title">
                       This is My Works. Enjoy! :)
