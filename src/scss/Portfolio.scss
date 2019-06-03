@@ -215,13 +215,15 @@ video {
         display: block;
         margin: 3rem auto;
     }
+    .content {
+        width: 50%;
+    }
     .clock {
         margin: auto;
-        width: 8rem;
-        height: 8rem;
+        width: 11rem;
+        height: 11rem;
     }
     .pofol {
-        padding: 2vh;
         font-size: 3.5rem;
     }
     #description {
@@ -241,8 +243,13 @@ video {
 @media only screen and (max-width: 768px) {
     .clock {
         margin: auto;
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
+    }
+    .pofol {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        padding: 5vh 0;
     }
     #description {
         font-size: 10px;
@@ -262,5 +269,10 @@ video {
     .clock {
         width: 3rem;
         height: 3rem;
+    }
+    .pofol {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        padding: 2rem 0;
     }
 }

@@ -139,7 +139,7 @@ class Portfolio extends Component {
                       className="innerImg"
                     />
                   </a>
-                  <video />
+                  <video type="video/mp4" />
                   <div>
                     <p className="contents-title">
                       This is My Works. Enjoy! :)
