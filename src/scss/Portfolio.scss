@@ -224,6 +224,18 @@ video {
         padding: 2vh;
         font-size: 3.5rem;
     }
+    #description {
+        font-size: 13px;
+    }
+    #usedSkill {
+        font-size: 1.2rem;
+    }
+    #skills {
+        font-size: 12px;
+    }
+    .contents-desc {
+        padding: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -231,6 +243,18 @@ video {
         margin: auto;
         width: 5rem;
         height: 5rem;
+    }
+    #description {
+        font-size: 10px;
+    }
+    #usedSkill {
+        font-size: 1rem;
+    }
+    #skills {
+        font-size: 9px;
+    }
+    .contents-desc {
+        padding: 1rem;
     }
 }
 

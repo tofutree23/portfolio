@@ -38,6 +38,12 @@
     background: #ff4646;
 }
 
+@media only screen and (max-width: 1024px) {
+    .hour-hand {
+        margin-left: .7rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .hour-hand {
         margin-left: .5rem;

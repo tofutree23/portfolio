@@ -22,25 +22,25 @@ const webClick = () => {
       imgTag.style.display = 'block';
       imgTitle.innerHTML = 'Wetube';
       desc.innerHTML = `
-      <h1>Wetube는 NomadCoder의 강의를 들으면서 유튜브의 클론으로 만들어 본 작품입니다.</h1>
+      <h1 id="description">Wetube는 NomadCoder의 강의를 들으면서 유튜브의 클론으로 만들어 본 작품입니다.</h1>
       <br/>
       <p id="usedSkill">사용된 기술</p>
-      <li>JavaScript(ES6)</li>
-      <li>Node.js</li>
-      <li>Webpack</li>
-      <li>PUG</li>
-      <li>SASS</li>
-      <li>AWS</li>
-      <li>Babel</li>
+      <li id="skills">JavaScript(ES6)</li>
+      <li id="skills">Node.js</li>
+      <li id="skills">Webpack</li>
+      <li id="skills">PUG</li>
+      <li id="skills">SASS</li>
+      <li id="skills">AWS</li>
+      <li id="skills">Babel</li>
       <br/>
       <p id="usedSkill">구현된 기능</p>
-      <li>회원가입</li>
-      <li>로그인(E-mail, Github)</li>
-      <li>영상 업로드</li>
-      <li>영상 재생</li>
-      <li>댓글 달기</li>
-      <li>비디오 검색</li>
-      <li>회원 페이지</li>
+      <li id="skills">회원가입</li>
+      <li id="skills">로그인(E-mail, Github)</li>
+      <li id="skills">영상 업로드</li>
+      <li id="skills">영상 재생</li>
+      <li id="skills">댓글 달기</li>
+      <li id="skills">비디오 검색</li>
+      <li id="skills">회원 페이지</li>
       <br/>
       <p id="usedSkill">소스 보기</p>
       <button id="git-button"><a href="https://github.com/tofutree23/wetube" target="_blank"><span><i class="fab fa-github"></i></span>Github</a></button>
@@ -55,25 +55,25 @@ const webClick = () => {
       video.controls = 'true';
       video.alt = 'Dagabae';
       desc.innerHTML = `
-      <h1>PHP를 통해서 만들어본 작품입니다. 윈도우즈 가상머신에 LAMP를 올려 제작되었으며, 서버를 비롯한 웹의 전반적인 구동 원리를 이해하고자 했습니다.</h1>
+      <h1 id="description">PHP를 통해서 만들어본 작품입니다. 윈도우즈 가상머신에 LAMP를 올려 제작되었으며, 서버를 비롯한 웹의 전반적인 구동 원리를 이해하고자 했습니다.</h1>
       <br/>
       <p id="usedSkill">사용된 기술</p>
-      <li>Linux(CentOS)</li>
-      <li>Apache</li>
-      <li>MySQL</li>
-      <li>PHP</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>BootStrap</li>
+      <li id="skills">Linux(CentOS)</li>
+      <li id="skills">Apache</li>
+      <li id="skills">MySQL</li>
+      <li id="skills">PHP</li>
+      <li id="skills">HTML</li>
+      <li id="skills">CSS</li>
+      <li id="skills">BootStrap</li>
       <br/>
       <p id="usedSkill">구현된 기능</p>
-      <li>회원가입</li>
-      <li>로그인(세션을 통해 30일간 유지) / 로그아웃</li>
-      <li>게시글 등록, 댓글 등록, 대댓글 등록, 댓글 삭제, 수정</li>
-      <li>회원정보수정</li>
-      <li>관리자 페이지(상품 등록, 상품 수정, 상품 삭제, 게시판 관리 등)</li>
-      <li>상품결제</li>
-      <li>장바구니</li>
+      <li id="skills">회원가입</li>
+      <li id="skills">로그인(세션을 통해 30일간 유지) / 로그아웃</li>
+      <li id="skills">게시글 등록, 댓글 등록, 대댓글 등록, 댓글 삭제, 수정</li>
+      <li id="skills">회원정보수정</li>
+      <li id="skills">관리자 페이지(상품 등록, 상품 수정, 상품 삭제, 게시판 관리 등)</li>
+      <li id="skills">상품결제</li>
+      <li id="skills">장바구니</li>
       <br/>
       <p id="usedSkill">소스 보기</p>
       <button id="git-button"><a href="https://github.com/tofutree23/dagabae" target="_blank"><span><i class="fab fa-github"></i></span>Github</a></button>
