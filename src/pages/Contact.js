@@ -51,6 +51,18 @@ class Contact extends Component {
               />
             </a>
           </button>
+          <button className="ct-btn" id="blog">
+            <a
+              href="https://tofudev.blogspot.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.icons8.com/ios/50/000000/blogger-filled.png"
+                alt="blogger"
+              />
+            </a>
+          </button>
         </div>
         <div className="rows">
           <DashBoard />
