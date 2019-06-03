@@ -74,11 +74,11 @@ class DashBoard extends Component {
         <table className="boardTable">
           <tbody>
             <tr align="center">
-              <th width="50rem">No.</th>
-              <th width="250rem">Comment</th>
-              <th width="80rem">Name</th>
-              <th width="80rem">Date</th>
-              <th width="10rem">Del</th>
+              <th id="no">No.</th>
+              <th id="comment">Comment</th>
+              <th id="name">Name</th>
+              <th id="date">Date</th>
+              <th id="del">Del</th>
             </tr>
             {/* brdRow라는 변수에 map인 board를 넣어서 BoardItem 컴포넌트로 보낸다. 보내는 순간 보드아이템 컴포넌트는 자식이 된다.
             brdRow라는 변수는 보드아이템에서 사용할 변수명이다. 부모에서 지정해준 거니까 props로 사용해야 한다. */}
@@ -142,7 +142,7 @@ class InputBoard extends Component {
             id="contentsOf"
             type="text"
             name="btitle"
-            placeholder="Comment(공백 포함 최대 30자)"
+            placeholder="Comment"
             onChange={this.handleChange}
             value={this.state.btitle}
             required
