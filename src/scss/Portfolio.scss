@@ -1,229 +1,249 @@
 @font-face {
-  font-family: 'NIXGONM-Vb';
-  src:
-    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
-  font-weight:
-    normal;
-  font-style: normal;
+	font-family: 'NIXGONM-Vb';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .portfolio {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .aboutclock {
-  font: {
-    family: 'Montserrat', sans-serif;
-    size: 2rem;
-  }
+	font: {
+		family: 'Montserrat', sans-serif;
+		size: 2rem;
+	}
 }
 
 .clock {
-  z-index: -1;
-  padding: 0.5rem;
-  margin: 0;
+	z-index: -1;
+	padding: 0.5rem;
 }
 
 .pofol {
-  padding: 15vh 0;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3rem;
-  animation-duration: 1s;
-  animation-name: slidein;
+	padding: 10vh 0;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+	animation-duration: 1s;
+	animation-name: slidein;
 
-  font: {
-    family: 'Montserrat', sans-serif;
-    size: 4rem;
-  }
+	font: {
+		family: 'Montserrat', sans-serif;
+		size: 4rem;
+	}
 }
 
 .section {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5rem;
 }
 
 .content {
-  width: 30vw;
-  height: 30vh;
-  margin: 0 3rem;
-  border: 0.2rem dashed rgba($color: #000000, $alpha: 0.5);
-  border-radius: 5%;
+	width: 33%;
+	margin: 0 3rem;
+	border: 0.2rem dashed rgba($color: #000000, $alpha: 0.5);
+	border-radius: 5%;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5%;
-  cursor: pointer;
+	width: 100%;
+	height: 100%;
+	border-radius: 5%;
+	cursor: pointer;
 }
 
 // PORTPOP SECTION
 
 .innerImg {
-  border-radius: 0;
-  cursor: default;
+	border-radius: 0;
+	cursor: default;
 }
 
 .contents-title {
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
 
-  font: {
-    family: 'Montserrat', sans-serif;
-    size: 2rem;
-  }
+	font: {
+		family: 'Montserrat', sans-serif;
+		size: 2rem;
+	}
 }
 
 .contents-desc {
-  padding: 2rem;
-  text-align: justify;
+	padding: 2rem;
+	text-align: justify;
 
-  font: {
-    family: 'NIXGONM-Vb';
-  }
+	font: {
+		family: 'NIXGONM-Vb';
+	}
 }
 
 video {
-  width: 100%;
-  height: 100%;
-  display: none;
+	width: 100%;
+	height: 100%;
+	display: none;
 }
 
 .pop-container {
-  padding: 20px 25px;
+	padding: 20px 25px;
 }
 
 .contents {
-  color: #666;
-  line-height: 25px;
+	color: #666;
+	line-height: 25px;
 }
 
 .btn-r {
-  width: 100%;
-  margin: 10px 0 20px;
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
-  text-align: right;
+	width: 100%;
+	margin: 10px 0 20px;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	text-align: right;
 }
 
 .dim-layer {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
 
-  .dimBg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-  }
+	.dimBg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
 
-  .pop-layer {
-    display: block;
-    position: absolute;
-    height: 30rem;
-    top: 50%;
-    margin-top: -15rem;
-    /* half of height */
-    width: 60%;
-    left: 50%;
-    /* 이렇게 주면 화면의 50% 위치에서 레이어가 시작됨 */
-    margin-left: -30%;
-    /* half of width만큼 음수값의 마진을 주면 왼쪽으로 당겨져서 화면의 절반을 차지하게 되는 것 */
-    background-color: #fff;
-    border: 5px solid rgba(0, 0, 0, 0.6);
-    z-index: 10;
-    overflow: auto;
-  }
+	.pop-layer {
+		display: block;
+		position: absolute;
+		height: 30rem;
+		top: 50%;
+		margin-top: -15rem;
+		/* half of height */
+		width: 60%;
+		left: 50%;
+		/* 이렇게 주면 화면의 50% 위치에서 레이어가 시작됨 */
+		margin-left: -30%;
+		/* half of width만큼 음수값의 마진을 주면 왼쪽으로 당겨져서 화면의 절반을 차지하게 되는 것 */
+		background-color: #fff;
+		border: 5px solid rgba(0, 0, 0, 0.6);
+		z-index: 10;
+		overflow: auto;
+	}
 }
 
 .imgA {
-  .innerImg {
-    cursor: pointer;
-  }
+	.innerImg {
+		cursor: pointer;
+	}
 }
 
 .btn-layerClose {
-  display: inline-block;
-  height: 25px;
-  padding: 0 14px 0;
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
-  font-size: 13px;
-  color: #fff;
-  line-height: 25px;
-  cursor: pointer;
-  overflow: hidden;
+	display: inline-block;
+	height: 25px;
+	padding: 0 14px 0;
+	border: none;
+	border-radius: 10px;
+	background-color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+	font-size: 13px;
+	color: #fff;
+	line-height: 25px;
+	cursor: pointer;
+	overflow: hidden;
 
-  font: {
-    family: 'Montserrat', sans-serif;
-    size: 15px;
-  }
+	font: {
+		family: 'Montserrat', sans-serif;
+		size: 15px;
+	}
 
-  &:hover {
-    background-color: rgba(253, 253, 253, 0.6);
-    color: black;
-  }
+	&:hover {
+		background-color: rgba(253, 253, 253, 0.6);
+		color: black;
+	}
 
-  &:active {
-    background-color: rgba(30, 22, 54, 0.6);
-    box-shadow: 0 0px 0px 2px rgba(30, 22, 54, 0.4);
-    transform: translateY(2px);
-    color: white;
-  }
+	&:active {
+		background-color: rgba(30, 22, 54, 0.6);
+		box-shadow: 0 0px 0px 2px rgba(30, 22, 54, 0.4);
+		transform: translateY(2px);
+		color: white;
+	}
 }
 
 #usedSkill {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 
-  font: {
-    weight: bold;
-    size: 1.4rem;
-  }
+	font: {
+		weight: bold;
+		size: 1.4rem;
+	}
 }
 
 .fa-github {
-  justify-content: center;
-  align-items: center;
-  padding: .1rem;
-  margin-right: .4rem;
+	justify-content: center;
+	align-items: center;
+	padding: .1rem;
+	margin-right: .4rem;
 
-  font: {
-    size: 2rem;
-  }
-
+	font: {
+		size: 2rem;
+	}
 }
 
 #git-button {
-  background-color: #444444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 10px;
-  font-family: 'NIXGONM-Vb';
+	background-color: #444444;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 10px;
+	font-family: 'NIXGONM-Vb';
 
-  a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;
+	a {
+		text-decoration: none;
+		color: white;
+		display: flex;
+		align-items: center;
 
-    &:visited {
-      text-decoration: none;
-    }
-  }
+		&:visited {
+			text-decoration: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.section {
+		display: block;
+		margin: 3rem auto;
+	}
+	.clock {
+		margin: auto;
+		width: 8rem;
+		height: 8rem;
+	}
+	.pofol {
+		padding: 2vh;
+		font-size: 3.5rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 320px) {
 }
