@@ -48,7 +48,7 @@ class App extends Component {
       item[1].style.color = 'black';
       item[2].style.color = 'crimson';
       item[3].style.color = 'black';
-    } else {
+    } else if (path === '/contact') {
       item[0].style.color = 'black';
       item[1].style.color = 'black';
       item[2].style.color = 'black';
