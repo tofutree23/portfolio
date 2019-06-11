@@ -62,6 +62,7 @@ const webClick = () => {
       <li id="skills">Apache</li>
       <li id="skills">MySQL</li>
       <li id="skills">PHP</li>
+      <li id="skills">jQuery</li>
       <li id="skills">HTML</li>
       <li id="skills">CSS</li>
       <li id="skills">BootStrap</li>
