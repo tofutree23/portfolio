@@ -8,7 +8,7 @@ class DashBoard extends Component {
   }
 
   state = {
-    currentNo: 5,
+    currentNo: 6,
     boards: [
       {
         bno: 1,
@@ -19,17 +19,23 @@ class DashBoard extends Component {
       {
         bno: 2,
         bwriter: '종형',
-        btitle: '다만 이 게시판은 저장이 되지 않습니다. (no-DB)',
+        btitle: '본 게시글을 클릭하면 input창을 통해 수정이 가능합니다.',
         bdate: new Date(),
       },
       {
         bno: 3,
         bwriter: '종형',
-        btitle: '단순히 게시판 형태의 구현을 위해 만들어둔 페이지이므로',
+        btitle: '다만 이 게시판은 저장이 되지 않습니다. (no-DB)',
         bdate: new Date(),
       },
       {
         bno: 4,
+        bwriter: '종형',
+        btitle: '단순히 게시판 형태의 구현을 위해 만들어둔 페이지이므로',
+        bdate: new Date(),
+      },
+      {
+        bno: 5,
         bwriter: '종형',
         btitle: '문의는 이메일을 클릭해서 남겨주시면 감사하겠습니다.',
         bdate: new Date(),
