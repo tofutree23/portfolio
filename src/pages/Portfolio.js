@@ -27,10 +27,12 @@ const webClick = () => {
       <p id="usedSkill">사용된 기술</p>
       <li id="skills">JavaScript(ES6)</li>
       <li id="skills">Node.js</li>
+      <li id="skills">MongoDB</li>
+      <li id="skills">Mongoose</li>
       <li id="skills">Webpack</li>
       <li id="skills">PUG</li>
       <li id="skills">SASS</li>
-      <li id="skills">AWS</li>
+      <li id="skills">AWS(EC2, S3)</li>
       <li id="skills">Babel</li>
       <br/>
       <p id="usedSkill">구현된 기능</p>
