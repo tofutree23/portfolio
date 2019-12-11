@@ -115,44 +115,12 @@ class Portfolio extends Component {
             />
           </section>
           {/* 팝업창 띄우는 곳 */}
-          <section className="dim-layer">
-            {/* 어두운 배경 div */}
-            <div className="dimBg" />
-            {/* 레이어 팝업 */}
-            <div className="pop-layer">
-              <div className="pop-container">
-                <div className="contents">
-                  <a
-                    className="imgA"
-                    href="http://13.124.203.193:3000/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="http://www.bloter.net/wp-content/uploads/2019/01/google-logo-1-800x450.jpg"
-                      alt="Lorem"
-                      className="innerImg"
-                    />
-                  </a>
-                  <video
-                    type="video/mp4"
-                    width="100%"
-                    height="auto"
-                    playsInline
-                    autoPlay
-                    muted
-                  />
-                </div>
-                <div className="btn-r">
-                  <button className="btn-layerClose">Close</button>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
       </div>
     );
   }
 }
+
+const PortfolioComponent = () => {};
 
 export default Portfolio;

@@ -13,8 +13,7 @@ const Footer = () => {
         </small>
       </footer>
       <div className="here">
-        * 이 웹사이트는 Vanilla JavaScript, SCSS와 React만을 사용하여
-        만들어졌습니다.
+        * 이 웹사이트는 SCSS와 React 등을 사용하여 만들어졌습니다.
       </div>
     </div>
   );
