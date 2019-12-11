@@ -3,24 +3,20 @@ import 'scss/About.scss';
 
 const scrollEvent = () => {
   if (window.scrollY > 700) {
-    document.getElementsByClassName('html')[0].style.width = '33vw';
+    document.getElementsByClassName('html')[0].style.width = '35vw';
     document.getElementsByClassName('css')[0].style.width = '30vw';
-    document.getElementsByClassName('js')[0].style.width = '28vw';
-    document.getElementsByClassName('php')[0].style.width = '33vw';
-    document.getElementsByClassName('react')[0].style.width = '18vw';
+    document.getElementsByClassName('js')[0].style.width = '33vw';
+    document.getElementsByClassName('react')[0].style.width = '33vw';
     document.getElementsByClassName('aws')[0].style.width = '19vw';
-    document.getElementsByClassName('node')[0].style.width = '15vw';
-    document.getElementsByClassName('photoshop')[0].style.width = '32vw';
+    document.getElementsByClassName('node')[0].style.width = '28vw';
     document.getElementsByClassName('firebase')[0].style.width = '20vw';
   } else {
     document.getElementsByClassName('html')[0].style.width = '0';
     document.getElementsByClassName('css')[0].style.width = '0';
     document.getElementsByClassName('js')[0].style.width = '0';
-    document.getElementsByClassName('php')[0].style.width = '0';
     document.getElementsByClassName('react')[0].style.width = '0';
     document.getElementsByClassName('aws')[0].style.width = '0';
     document.getElementsByClassName('node')[0].style.width = '0';
-    document.getElementsByClassName('photoshop')[0].style.width = '0';
     document.getElementsByClassName('firebase')[0].style.width = '0';
   }
 };
@@ -124,14 +120,6 @@ class About extends Component {
             <section className="percent-bar js" />
           </div>
           <div className="logo">
-            <i className="fab fa-php" />
-            <span className="bar-name">PHP</span>
-          </div>
-          <div className="bar">
-            <section className="base-bar" />
-            <section className="percent-bar php" />
-          </div>
-          <div className="logo">
             <i className="fab fa-react" />
             <span className="bar-name">React</span>
           </div>
@@ -169,18 +157,6 @@ class About extends Component {
           <div className="bar">
             <section className="base-bar" />
             <section className="percent-bar node" />
-          </div>
-          <div className="logo">
-            <img
-              className="fab fa-ps"
-              src="https://img.icons8.com/metro/52/000000/adobe-photoshop.png"
-              alt="photoshop"
-            />
-            <span className="bar-name">Photoshop</span>
-          </div>
-          <div className="bar">
-            <section className="base-bar" />
-            <section className="percent-bar photoshop" />
           </div>
         </div>
       </div>

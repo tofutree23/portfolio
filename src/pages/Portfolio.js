@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AnalogClock from 'components/AnalogClock';
 import 'scss/Portfolio.scss';
 
 const webClick = () => {
@@ -115,13 +114,6 @@ class Portfolio extends Component {
               alt="we-tube, the most popular streaming service youtube's clone"
             />
           </section>
-          <section
-            className="section content clock-section"
-            alt="Analog Clock with Vanilla JS"
-          >
-            {/* 아날로그 시계 컴포넌트를 이곳에서도 css로 제어할 수 있도록 클래스네임을 부여한다 */}
-            <AnalogClock className="clock" />
-          </section>
           {/* 팝업창 띄우는 곳 */}
           <section className="dim-layer">
             {/* 어두운 배경 div */}
@@ -150,17 +142,6 @@ class Portfolio extends Component {
                     autoPlay
                     muted
                   />
-                  <div>
-                    <p className="contents-title">
-                      This is My Works. Enjoy! :)
-                    </p>
-                    <div className="contents-desc">
-                      하나 둘 셋 넷
-                      <ul>
-                        <li>This is</li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
                 <div className="btn-r">
                   <button className="btn-layerClose">Close</button>

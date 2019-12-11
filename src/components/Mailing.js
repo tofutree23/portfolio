@@ -4,7 +4,7 @@ import 'scss/Mailing.scss';
 class Mailing extends Component {
   render() {
     return (
-      <div className="mailing" style={{ display: 'none' }}>
+      <div className="mailing" display="flex">
         <form
           id="mailForm"
           method="POST"
